@@ -1,0 +1,80 @@
+header .ad {
+  background: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+header .ad .ad-item {
+  width: 728px;
+  height: 90px;
+  background: #fff;
+}
+
+header .cabecalho {
+  padding: 15px 0;
+}
+
+header .cabecalho a {
+  text-decoration: none;
+}
+
+header .cabecalho a .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .cabecalho a .logo img {
+  width: 80px;
+}
+
+header .cabecalho a .logo h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #022e69;
+}
+
+header .cabecalho a .logo h1 span {
+  color: #38b6ff;
+}
+
+header .cabecalho .procura .form-group .form-control {
+  border-radius: 0;
+  border-color: #022e69;
+  border: 1px solid;
+}
+
+header .cabecalho .procura .form-group .btn-submit {
+  background: #022e69;
+  border: 2px solid #022e69;
+  color: #fff;
+}
+
+header .cabecalho .procura .form-group .btn-submit:hover {
+  border-color: #38b6ff;
+  background: #38b6ff;
+}
+
+header .navbar {
+  background: #022e69 !important;
+}
+
+header .navbar ul li a {
+  color: #fff;
+  font-size: 18px;
+}
+/*# sourceMappingURL=index.css.map */
