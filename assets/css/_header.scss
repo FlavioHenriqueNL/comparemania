@@ -1,0 +1,144 @@
+header {
+	.ad {
+		background: #f0f0f0;
+		// background: $cor-principal;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		.ad-item {
+			width: 728px;
+			height: 90px;
+			background: #fff;
+		}
+	}
+
+	.cabecalho {
+		background: #fafafa;
+		.listras {
+			.listra1 {
+				height: 60px;
+				background-color: $cor-principal;
+			}
+			.listra2 {
+				height: 25px;
+				background-color: $cor-secundaria;
+			}
+		}
+		.brand-home {
+			padding: 25px 0;
+			text-decoration: none;
+			display: block;
+			.logo {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 100px;
+				}
+				h1 {
+					font-size: 36px;
+					margin: 0;
+					color: $cor-principal;
+					span {
+						color: $cor-secundaria;
+					}
+				}
+			}
+		}
+
+		.search-socials{
+			padding-bottom: 15px;
+			.procura {
+				.form-group {
+					.form-control {
+						border-radius: 0;
+						border-color: $cor-principal;
+						border: 1px solid;
+					}
+					.btn-submit {
+						background: $cor-principal;
+						border: 2px solid $cor-principal;
+						color: #fff;
+						&:hover {
+							border-color: $cor-secundaria;
+							background: $cor-secundaria;
+						}
+					}
+				}
+			}
+
+			.redes-sociais{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				a{
+					font-size: 35px;
+					color: $cor-principal;
+				}
+			}
+
+		}
+
+	}
+	.navbar {
+		background: $cor-principal !important;
+		ul {
+			li {
+				a {
+					color: #fff;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	.list-marquee{
+		background: #000;
+		height: 50px;
+		.empresa{
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.valor{
+			margin: 0 5px;
+			font-size: 18px;
+		}
+		.variacao{
+			&.positiva{
+				color: #4BB543;
+			}
+			&.negativa{
+				color: #F32013;
+			}
+		}
+		ul{
+			display: flex;
+			height: 50px;
+			list-style: none;
+			li{
+				color: #fff;
+				border-left: 1px solid #444;
+				text-align: center;
+				padding: 15px;
+				
+
+			}
+		}
+	}
+
+	.btn-extensao{
+		background: #1973e8;
+		color: #fff !important;
+		text-decoration: none;
+		display: flex;
+		height: 50px;
+		gap: 15px;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		&:hover{
+			background: darken(#1973e8, 10%);
+		}
+	}
+}
