@@ -9,12 +9,21 @@
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
   <header>
-    <section class="ad">
-      <div class="ad-item" id="desktop">
+    <section class="ad desktop">
+      <div class="ad-item">
         <a href="https://bancointer.onelink.me/nyEn/30715cf6" target="_blank">
           <img src="https://www.comparemania.com.br/img/inter_728x90.png" alt="Cashback Banco Inter">
         </a>
@@ -22,10 +31,21 @@
     </section>
 
     <section class="cabecalho">
-
       <div class="listras">
-        <div class="listra1"></div>
-        <div class="listra2"></div>
+        <div class="listra"></div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="offset-md-10 offset-8 col-md-2 col-4">
+            <section class="redes-sociais">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </section>
+          </div>
+        </div>
       </div>
 
       <a href="/" class="brand-home">
@@ -35,24 +55,22 @@
         </div>
       </a>
 
-      <section class="search-socials">
+      <section class="search">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md col-12">
+            <div class="col-auto d-md-none d-block">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="col">
               <form action="" method="" class="procura">
                 <div class="form-group d-flex">
                   <input type="text" class="form-control" placeholder="Procure a loja aqui" name="" id="">
                   <input class="btn-submit" type="submit" value="Procurar">
                 </div>
               </form>
-            </div>
-            <div class="col-2">
-              <div class="redes-sociais">
-                <a href=""><i class="fab fa-facebook-square"></i></a>
-                <a href=""><i class="fab fa-instagram-square"></i></a>
-                <a href=""><i class="fab fa-twitter-square"></i></a>
-                <a href=""><i class="fab fa-youtube-square"></i></a>
-              </div>
             </div>
           </div>
         </div>
@@ -62,37 +80,23 @@
 
     <nav class="navbar navbar-expand-md">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav align-items-center text-center justify-content-between flex-grow-1">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Pontos/Milhas</a>
+            <ul class="barra-navegacao list-group navbar-nav">
+              <li><a data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Pontos/Milhas</a></li>
+              <li><a data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Cashback</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cashback</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Programas de Recompensa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Super Cashback</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Comparador</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Calculadora de Milhas</a>
-              </li>
-
+              <li><a data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Programas de
+                  Recompensas</a></li>
+              <li><a href="#">Super Cashback</a></li>
+              <li><a href="#">Comparador</a></li>
+              <li><a href="#">Calculadora de Milhas</a></li>
             </ul>
           </div>
         </div>
@@ -100,291 +104,433 @@
     </nav>
 
     <section>
-      
-        <div class="row g-0">
-          <div class="col-xl-10 col-md-9 col-sm-8 ">
-            <marquee scrollamount="30" class="list-marquee"  behavior="scroll " loop="infinite">
-              <ul class="d-flex align-items-center">
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>
-                <li><span class="empresa">Caldo Bom</span> <span class="valor">7%</span> <span class="variacao negativa">60% <i class="fas fa-caret-down"></i> </span></li>
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>     
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>
-                <li><span class="empresa">Caldo Bom</span> <span class="valor">7%</span> <span class="variacao negativa">60% <i class="fas fa-caret-down"></i> </span></li>
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>     
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>
-                <li><span class="empresa">Caldo Bom</span> <span class="valor">7%</span> <span class="variacao negativa">60% <i class="fas fa-caret-down"></i> </span></li>
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>     
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>
-                <li><span class="empresa">Caldo Bom</span> <span class="valor">7%</span> <span class="variacao negativa">60% <i class="fas fa-caret-down"></i> </span></li>
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>     
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>
-                <li><span class="empresa">Caldo Bom</span> <span class="valor">7%</span> <span class="variacao negativa">60% <i class="fas fa-caret-down"></i> </span></li>
-                <li><span class="empresa">Etna</span> <span class="valor">3.2%</span> <span class="variacao positiva">38% <i class="fas fa-caret-up"></i> </span></li>     
+      <div class="row g-0">
+        <div class="col-xl-10 col-md-9 col-sm-8 ">
+
+          <section class="simple-marquee-container">
+            <div class="marquee">
+
+              <ul class="marquee-content-items">
+                <li id="stock_dolar_index">USD R$ 5,3681 <span class="ticker-item-positive"> +0,0000 </span></li>
+                <li id="stock_euro_index">EUR R$ 5,9822 <span class="ticker-item-positive"> +0,0000 </span></li>
+                <li id="stock_ambev_index">ABEV3 R$ 14,93 <span class="ticker-item-negative"> -3,05% </span></li>
+                <li id="stock_bb_index">BBAS3 R$ 32,49 <span class="ticker-item-positive"> +0,62% </span></li>
               </ul>
-            </marquee>
-          </div>
-          <div class="col-xl-2 col-md-3 col-sm-4">
-            <a class="btn-extensao" href="https://chrome.google.com/webstore/detail/melhor-ganho-cashback-pon/delekmlgfgpjjafoklhpnejlgdgacgjk?hl=pt-BR" target="_blank">
-                <img src="assets/img/google-chrome.svg" width="35" height="35" class="ml-1 pt-1 pb-1">
-                <strong class="small font-weight-bold pr-2 text-decoration-none">Usar no Chrome</strong>
-            </a>
-          </div>
+              <ul class="marquee-content-items">
+                <li id="stock_dolar_index">USD R$ 5,3681 <span class="ticker-item-positive"> +0,0000 </span></li>
+                <li id="stock_euro_index">EUR R$ 5,9822 <span class="ticker-item-positive"> +0,0000 </span></li>
+                <li id="stock_ambev_index">ABEV3 R$ 14,93 <span class="ticker-item-negative"> -3,05% </span></li>
+                <li id="stock_bb_index">BBAS3 R$ 32,49 <span class="ticker-item-positive"> +0,62% </span></li>
+              </ul>
+
+            </div>
+          </section>
+
         </div>
-     
+
+        <div class="col-xl-2 col-md-3 col-sm-4">
+          <a class="btn-extensao"
+            href="https://chrome.google.com/webstore/detail/melhor-ganho-cashback-pon/delekmlgfgpjjafoklhpnejlgdgacgjk?hl=pt-BR"
+            target="_blank">
+            <img src="assets/img/google-chrome.svg" width="35" height="35" class="ml-1 pt-1 pb-1">
+            <strong class="small font-weight-bold pr-2 text-decoration-none">Usar no Chrome</strong>
+          </a>
+        </div>
+
+      </div>
     </section>
-    
+
 
   </header>
 
   <main>
 
-    <section class="tabelas">
+    <section class="ad desktop">
+      <div class="ad-item">
+        <a href="https://bancointer.onelink.me/nyEn/30715cf6" target="_blank">
+          <img src="https://www.comparemania.com.br/img/inter_728x90.png" alt="Cashback Banco Inter">
+        </a>
+      </div>
+    </section>
+
+
+    <section class="secao-tabelas">
       <div class="container">
         <div class="row">
-          <div class="col-lg col-md-6">
-            <article class="tabelaVariacoes">
-              <table class="table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Loja</th>
-                    <th>Retorno</th>
-                    <th>Variação</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>10 pt/$</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>5 pt/$</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1 pt/$</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                </tbody>
-              </table>
-            </article>
-          </div>
-          <div class="col-lg col-md-6">
-            <article class="tabelaVariacoes">
-              <table class="table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Loja</th>
-                    <th>Retorno</th>
-                    <th>Variação</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>4%</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>15%</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1%</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>4%</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>15%</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1%</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>4%</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>15%</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1%</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>4%</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>15%</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1%</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>4%</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>15%</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1%</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                  <tr>
-                    <td>ABC da Construção</td>
-                    <td>4%</td>
-                    <td class="estavel"> - </td>
-                  </tr>
-                  <tr>
-                    <td>Shoptime</td>
-                    <td>15%</td>
-                    <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
-                  </tr>
-                  <tr>
-                    <td>Casas Bahia</td>
-                    <td>1%</td>
-                    <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
-                  </tr>
-                </tbody>
-              </table>
-            </article>
-          </div>
+          <div class="col">
 
+            <section class="tab-content" id="nav-tabContent">
+
+              <article class="tab-pane fade show active tabelas" id="list-home" role="tabpanel"
+                aria-labelledby="list-home-list">
+
+                <h1 class="titulo-tabela">Lojas que oferecem pontos e milhas</h1>
+                <hr>
+
+                <section class="tabelaVariacoes">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Loja</th>
+                        <th>Retorno</th>
+                        <th>Variação</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>10 pt/$</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>5 pt/$</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1 pt/$</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+
+              </article>
+
+              <article class="tab-pane fade tabelas" id="list-profile" role="tabpanel"
+                aria-labelledby="list-profile-list">
+                <h1 class="titulo-tabela">Lojas populares que oferecem cashback</h1>
+                <hr>
+
+                <section class="tabelaVariacoes">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Loja</th>
+                        <th>Retorno</th>
+                        <th>Variação</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+              </article>
+              <article class="tab-pane fade tabelas" id="list-messages" role="tabpanel"
+                aria-labelledby="list-messages-list">
+                <h1 class="titulo-tabela">Lojas populares que oferecem Programas de Recompensas</h1>
+                <hr>
+
+                <section class="tabelaVariacoes">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Loja</th>
+                        <th>Retorno</th>
+                        <th>Variação</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td>ABC da Construção</td>
+                        <td>4%</td>
+                        <td class="estavel"> - </td>
+                      </tr>
+                      <tr>
+                        <td>Shoptime</td>
+                        <td>15%</td>
+                        <td class="subiu">20% <i class="fas fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Casas Bahia</td>
+                        <td>1%</td>
+                        <td class="caiu">20% <i class="fas fa-caret-down"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+              </article>
+              <article class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+
+              </article>
+            </section>
+          </div>
           <div class="col-auto">
             <div class="row">
+
               <div class="col-12">
+
                 <div class="text-center" style="display: block; margin-left: auto; margin-right: auto">
                   <script async=""
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
@@ -409,167 +555,46 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                   </script>
                 </div>
+
+                <div class="text-center" style="display: block; margin-left: auto; margin-right: auto">
+                  <script async=""
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+                    crossorigin="anonymous" data-checked-head="true"></script>
+                  <!-- 300x250 news -->
+                  <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+                    data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+                      aria-label="Advertisement"
+                      style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+                        id="aswift_2_anchor"
+                        style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+                          id="aswift_2" name="aswift_2"
+                          style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+                          sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                          width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0"
+                          hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true"
+                          src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+                          data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+                          data-load-complete="true"></iframe></ins></ins></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
               </div>
+
             </div>
-
           </div>
+
         </div>
       </div>
     </section>
-
-    <section class="blog">
-      <div class="container">
-        <h1 class="titulo-secao">Artigos e Dicas</h1>
-        <div class="row">
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="" class="blog-post">
-              <figure>
-                <img src="./assets/img/cashback.png" class="img-fluid" alt="Cashback, o que é?">
-              </figure>
-              <div class="conteudo">
-                <h1>Cashback o que é?</h1>
-                <p>Em sua tradução, cashback quer dizer dinheiro de volta! É um sistema que sugiu há alguns anos que
-                  retorna para o comprador parte do valor pago, mas não é só isso! A intenção é atrair o cliente para
-                  realizar a compra. É uma bonificação pela compra de forma a fidelizar o comprador e tornar a venda
-                  mais agradável....</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
 
     <section>
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <div class="row">
 
 
-          <div class="text-center" style="display: block; margin-left: auto; margin-right: auto">
-            <script async=""
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
-              crossorigin="anonymous" data-checked-head="true"></script>
-            <!-- 300x250 news -->
-            <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
-              data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
-                aria-label="Advertisement"
-                style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
-                  id="aswift_2_anchor"
-                  style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
-                    id="aswift_2" name="aswift_2"
-                    style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
-                    sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-                    width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
-                    allowtransparency="true" scrolling="no" allowfullscreen="true"
-                    src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
-                    data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
-                    data-load-complete="true"></iframe></ins></ins></ins>
-            <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </div>
+
 
           <div class="col-12" width="100%">
             <a class="text-dark text-decoration-none" target="_blank" href="/promocao/redireciona/153338">
@@ -1071,6 +1096,103 @@
 
       </div>
     </section>
+
+
+    <style>
+      @-webkit-keyframes ticker-animation {
+        100% {
+          transform: translateX(-100%)
+        }
+      }
+
+      @keyframes ticker-animation {
+        100% {
+          transform: translateX(-100%)
+        }
+      }
+
+
+
+      .simple-marquee-container {
+        width: 100%;
+        background: #0f1923;
+        float: left;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 50px;
+        position: relative
+      }
+
+      .simple-marquee-container .marquee,
+      .simple-marquee-container *[class^=marquee] {
+        display: inline-block;
+        white-space: nowrap;
+        position: absolute
+      }
+
+      .simple-marquee-container .marquee-content-items {
+        margin: 0;
+        height: 50px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        white-space: nowrap;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: ticker-animation;
+        animation-name: ticker-animation;
+        -webkit-animation-duration: 110s;
+        animation-duration: 110s
+      }
+
+      .simple-marquee-container .marquee-content-items li {
+        display: inline-block;
+        line-height: 35px;
+        color: #fff;
+        width: fit-content;
+        padding: 0 24px;
+        height: 50px;
+        margin: 0 auto;
+        letter-spacing: .02px;
+        font: normal normal 600 12px/14px "Barlow";
+        text-align: center;
+        border-left: 1px solid #444;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        line-height: 50px
+      }
+
+      .simple-marquee-container .marquee-content-items li:after {
+        margin: 0 1em
+      }
+
+      .ticker-item-positive {
+        color: #30c759;
+        font-weight: 600
+      }
+
+      .ticker-item-negative {
+        color: #fe3c30;
+        font-weight: 600
+      }
+    </style>
+
+
+
+
+
+
+    <script type="text/javascript">
+      var ticker = document.querySelector('.marquee');
+      var list = document.querySelector('.marquee-content-items');
+      var clone = list.cloneNode(true);
+      ticker.append(clone);
+    </script>
+
+
 
 
 

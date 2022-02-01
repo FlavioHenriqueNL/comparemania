@@ -1,10 +1,37 @@
 @import 'config';
 @import 'header';
 
+.ad {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  .ad-item {
+    width: 728px;
+    height: 90px;
+    background: #fff;
+  }
+}
 
+.secao-tabelas{
+  padding: 50px;
+}
 
 .tabelas{
-  padding: 50px 0;
+  .titulo-tabela{
+    color: #909090;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  hr{
+    border: 5px solid $cor-secundaria !important;
+    width: 25%;
+    margin: 0 auto 0 0;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
 }
 
 .tabelaVariacoes{
@@ -27,6 +54,7 @@
       border: 1px solid $cor-secundaria;
       background-color: $cor-secundaria;
       color: #fff;
+      
       th{
         background-color: $cor-secundaria;
         text-align: center;

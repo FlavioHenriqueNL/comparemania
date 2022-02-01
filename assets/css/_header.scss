@@ -1,26 +1,9 @@
 header {
-	.ad {
-		background: #f0f0f0;
-		// background: $cor-principal;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 10px;
-		.ad-item {
-			width: 728px;
-			height: 90px;
-			background: #fff;
-		}
-	}
-
 	.cabecalho {
 		background: #fafafa;
+		position: relative;
 		.listras {
-			.listra1 {
-				height: 60px;
-				background-color: $cor-principal;
-			}
-			.listra2 {
+			.listra {
 				height: 25px;
 				background-color: $cor-secundaria;
 			}
@@ -47,8 +30,9 @@ header {
 			}
 		}
 
-		.search-socials{
+		.search {
 			padding-bottom: 15px;
+
 			.procura {
 				.form-group {
 					.form-control {
@@ -67,67 +51,87 @@ header {
 					}
 				}
 			}
-
-			.redes-sociais{
+		}
+		.container{
+		.redes-sociais {
+				padding-top: 15px;
+				margin-bottom: -15px;
 				display: flex;
-				align-items: center;
 				justify-content: space-between;
-				a{
-					font-size: 35px;
+				align-items: flex-end;
+				a {
+					font-size: 18px;
 					color: $cor-principal;
 				}
-			}
-
+			}			
 		}
-
+	}
+	.navbar-toggler{
+		color: $cor-principal;
+		font-size: 35px;
 	}
 	.navbar {
 		background: $cor-principal !important;
-		ul {
+		height: 60px;
+		.barra-navegacao{
+			text-align: center;
+			align-items: center;
+			justify-content: space-between;
+			flex: 1;
 			li {
 				a {
 					color: #fff;
 					font-size: 18px;
+					text-decoration: none;
+				}
+			}
+		}
+		@media(max-width: 768px){
+			height: 25px;
+			.barra-navegacao{
+				li{
+					margin-bottom: 15px;
+					a{
+						color: $cor-principal;
+					}
 				}
 			}
 		}
 	}
 
-	.list-marquee{
+	.list-marquee {
 		background: #000;
 		height: 50px;
-		.empresa{
+		.empresa {
 			font-weight: bold;
 			text-transform: uppercase;
 		}
-		.valor{
+		.valor {
 			margin: 0 5px;
 			font-size: 18px;
 		}
-		.variacao{
-			&.positiva{
-				color: #4BB543;
+		.variacao {
+			&.positiva {
+				color: #4bb543;
 			}
-			&.negativa{
-				color: #F32013;
+			&.negativa {
+				color: #f32013;
 			}
 		}
-		ul{
+		ul {
 			display: flex;
 			height: 50px;
 			list-style: none;
-			li{
+			li {
 				color: #fff;
 				border-left: 1px solid #444;
 				text-align: center;
 				padding: 15px;
-				
-
 			}
 		}
 	}
 
-	.btn-extensao{
+	.btn-extensao {
 		background: #1973e8;
 		color: #fff !important;
 		text-decoration: none;
@@ -137,7 +141,7 @@ header {
 		align-items: center;
 		justify-content: center;
 		font-size: 18px;
-		&:hover{
+		&:hover {
 			background: darken(#1973e8, 10%);
 		}
 	}
