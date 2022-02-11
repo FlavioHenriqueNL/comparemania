@@ -202,6 +202,7 @@ header .btn-extensao:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 #supercashback .titulo svg {
