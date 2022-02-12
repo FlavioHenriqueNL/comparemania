@@ -1,19 +1,15 @@
 @import "config";
 @import "header";
+@import "footer";
 @import "supercashback";
 
-.ad {
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  .ad-item {
-    width: 728px;
-    height: 90px;
-    background: #fff;
-  }
-}
+//Páginas Internas
+@import 'page-contato';
+
+
+// Componentes
+@import 'logo';
+@import 'ad';
 
 .secao-tabelas {
   padding: 50px;

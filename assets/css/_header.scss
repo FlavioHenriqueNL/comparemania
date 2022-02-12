@@ -8,27 +8,7 @@ header {
 				background-color: $cor-secundaria;
 			}
 		}
-		.brand-home {
-			padding: 25px 0;
-			text-decoration: none;
-			display: block;
-			.logo {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				img {
-					width: 100px;
-				}
-				h1 {
-					font-size: 36px;
-					margin: 0;
-					color: $cor-principal;
-					span {
-						color: $cor-secundaria;
-					}
-				}
-			}
-		}
+		
 
 		.search {
 			padding-bottom: 15px;
@@ -52,6 +32,7 @@ header {
 				}
 			}
 		}
+
 		.container{
 		.redes-sociais {
 				padding-top: 15px;
@@ -62,6 +43,10 @@ header {
 				a {
 					font-size: 18px;
 					color: $cor-principal;
+					transition: 0.5s all;
+					&:hover{
+						color: $cor-secundaria;
+					}
 				}
 			}			
 		}
@@ -99,38 +84,6 @@ header {
 		}
 	}
 
-	.list-marquee {
-		background: #000;
-		height: 50px;
-		.empresa {
-			font-weight: bold;
-			text-transform: uppercase;
-		}
-		.valor {
-			margin: 0 5px;
-			font-size: 18px;
-		}
-		.variacao {
-			&.positiva {
-				color: #4bb543;
-			}
-			&.negativa {
-				color: #f32013;
-			}
-		}
-		ul {
-			display: flex;
-			height: 50px;
-			list-style: none;
-			li {
-				color: #fff;
-				border-left: 1px solid #444;
-				text-align: center;
-				padding: 15px;
-			}
-		}
-	}
-
 	.btn-extensao {
 		background: #1973e8;
 		color: #fff !important;
@@ -145,4 +98,84 @@ header {
 			background: darken(#1973e8, 10%);
 		}
 	}
+
+	@-webkit-keyframes ticker-animation {
+        100% {
+          transform: translateX(-100%)
+        }
+      }
+
+      @keyframes ticker-animation {
+        100% {
+          transform: translateX(-100%)
+        }
+      }
+
+
+
+      .simple-marquee-container {
+        width: 100%;
+        background: #21417c;
+        float: left;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 50px;
+        position: relative
+      }
+
+      .simple-marquee-container .marquee,
+      .simple-marquee-container *[class^=marquee] {
+        display: inline-block;
+        white-space: nowrap;
+        position: absolute
+      }
+
+      .simple-marquee-container .marquee-content-items {
+        margin: 0;
+        height: 50px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        white-space: nowrap;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: ticker-animation;
+        animation-name: ticker-animation;
+        -webkit-animation-duration: 110s;
+        animation-duration: 110s
+      }
+
+      .simple-marquee-container .marquee-content-items li {
+        display: inline-block;
+        line-height: 35px;
+        color: #fff;
+        width: fit-content;
+        padding: 0 24px;
+        height: 50px;
+        margin: 0 auto;
+        letter-spacing: .02px;
+        font: normal normal 600 12px/14px "Barlow";
+        text-align: center;
+        border-left: 1px solid #fff;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        line-height: 50px
+      }
+
+      .simple-marquee-container .marquee-content-items li:after {
+        margin: 0 1em
+      }
+
+      .ticker-item-positive {
+        color: #30c759;
+        font-weight: 600
+      }
+
+      .ticker-item-negative {
+        color: #fe3c30;
+        font-weight: 600
+      }
 }

@@ -1,0 +1,89 @@
+footer {
+    padding: 50px 0;
+    background: $cor-principal;
+    overflow: hidden;
+    .brand-home {
+        padding: 0;
+        max-width: 380px;
+        margin-bottom: 100px;
+        .logo {
+            background: #fff;
+            border-radius: 15px;
+        }
+        @media (max-width: 768px) {
+            margin: auto auto 50px auto;
+        }
+    }
+
+    .lista-sociais {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        padding: 0;
+        h1 {
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        li {
+            a {
+                color: $cor-secundaria;
+                font-size: 25px;
+                display: flex;
+                width: 50px;
+                height: 50px;
+                background: #fff;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: all 0.5s;
+                &:hover {
+                    background: $cor-secundaria;
+                    color: #fff;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            justify-content: center;
+            margin-bottom: 35px;
+            h1{
+                display: none;
+            }
+          }
+    }
+
+    #logo-socials {
+        @media (max-width: 768px) {
+            display: block !important;
+        }
+        @media (max-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .menu {
+        color: #fff;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 35px;
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        li {
+            margin-bottom: 15px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: all 0.5s;
+                &:hover {
+                    color: $cor-secundaria;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.ad {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  &.single{
+    background: none;
+    margin: 50px 0;
+  }
+  .ad-item {
+    width: 728px;
+    height: 90px;
+    background: #fff;
+  }
+
+  &.desktop {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.ad-col{
+  @media(min-width: 992px){
+    max-width: 300px !important;
+  }
+}

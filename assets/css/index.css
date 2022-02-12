@@ -8,38 +8,6 @@ header .cabecalho .listras .listra {
   background-color: #38b6ff;
 }
 
-header .cabecalho .brand-home {
-  padding: 25px 0;
-  text-decoration: none;
-  display: block;
-}
-
-header .cabecalho .brand-home .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header .cabecalho .brand-home .logo img {
-  width: 100px;
-}
-
-header .cabecalho .brand-home .logo h1 {
-  font-size: 36px;
-  margin: 0;
-  color: #022e69;
-}
-
-header .cabecalho .brand-home .logo h1 span {
-  color: #38b6ff;
-}
-
 header .cabecalho .search {
   padding-bottom: 15px;
 }
@@ -78,6 +46,12 @@ header .cabecalho .container .redes-sociais {
 header .cabecalho .container .redes-sociais a {
   font-size: 18px;
   color: #022e69;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+header .cabecalho .container .redes-sociais a:hover {
+  color: #38b6ff;
 }
 
 header .navbar-toggler {
@@ -121,44 +95,6 @@ header .navbar .barra-navegacao li a {
   }
 }
 
-header .list-marquee {
-  background: #000;
-  height: 50px;
-}
-
-header .list-marquee .empresa {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-header .list-marquee .valor {
-  margin: 0 5px;
-  font-size: 18px;
-}
-
-header .list-marquee .variacao.positiva {
-  color: #4bb543;
-}
-
-header .list-marquee .variacao.negativa {
-  color: #f32013;
-}
-
-header .list-marquee ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  list-style: none;
-}
-
-header .list-marquee ul li {
-  color: #fff;
-  border-left: 1px solid #444;
-  text-align: center;
-  padding: 15px;
-}
-
 header .btn-extensao {
   background: #1973e8;
   color: #fff !important;
@@ -179,6 +115,216 @@ header .btn-extensao {
 
 header .btn-extensao:hover {
   background: #135cbb;
+}
+
+@-webkit-keyframes ticker-animation {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker-animation {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+header .simple-marquee-container {
+  width: 100%;
+  background: #21417c;
+  float: left;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  position: relative;
+}
+
+header .simple-marquee-container .marquee,
+header .simple-marquee-container *[class^=marquee] {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+}
+
+header .simple-marquee-container .marquee-content-items {
+  margin: 0;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker-animation;
+  animation-name: ticker-animation;
+  -webkit-animation-duration: 110s;
+  animation-duration: 110s;
+}
+
+header .simple-marquee-container .marquee-content-items li {
+  display: inline-block;
+  line-height: 35px;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  height: 50px;
+  margin: 0 auto;
+  letter-spacing: .02px;
+  font: normal normal 600 12px/14px "Barlow";
+  text-align: center;
+  border-left: 1px solid #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+header .simple-marquee-container .marquee-content-items li:after {
+  margin: 0 1em;
+}
+
+header .ticker-item-positive {
+  color: #30c759;
+  font-weight: 600;
+}
+
+header .ticker-item-negative {
+  color: #fe3c30;
+  font-weight: 600;
+}
+
+footer {
+  padding: 50px 0;
+  background: #022e69;
+  overflow: hidden;
+}
+
+footer .brand-home {
+  padding: 0;
+  max-width: 380px;
+  margin-bottom: 100px;
+}
+
+footer .brand-home .logo {
+  background: #fff;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  footer .brand-home {
+    margin: auto auto 50px auto;
+  }
+}
+
+footer .lista-sociais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+}
+
+footer .lista-sociais h1 {
+  font-size: 18px;
+  color: #fff;
+}
+
+footer .lista-sociais li a {
+  color: #38b6ff;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .lista-sociais li a:hover {
+  background: #38b6ff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  footer .lista-sociais {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 35px;
+  }
+  footer .lista-sociais h1 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  footer #logo-socials {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer #logo-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer .menu {
+  color: #fff;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+footer .menu h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+footer .menu li {
+  margin-bottom: 15px;
+}
+
+footer .menu li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .menu li a:hover {
+  color: #38b6ff;
 }
 
 #supercashback {
@@ -281,6 +427,103 @@ header .btn-extensao:hover {
   margin-top: 5px;
 }
 
+.titulo-pagina {
+  padding-left: 25px;
+  border-left: 12px solid #022e69;
+}
+
+.titulo-pagina h1 {
+  font-size: 48px;
+  color: #022e69;
+  font-weight: 700;
+}
+
+.titulo-pagina p {
+  font-size: 36px;
+  color: #4b4b4b;
+}
+
+.page-contato {
+  padding: 50px 0 100px;
+}
+
+.page-contato form {
+  margin: 50px 0;
+  background: #fff;
+  -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.18);
+          box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 25px;
+  padding: 50px;
+}
+
+.page-contato form .form-group {
+  margin-bottom: 25px;
+}
+
+.page-contato form .form-group label {
+  font-size: 25px;
+  font-weight: 700;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+
+.page-contato form .form-group .form-control {
+  height: 60px;
+}
+
+.page-contato form .form-group textarea.form-control {
+  height: 250px;
+  resize: none;
+}
+
+.page-contato form .btn-enviar {
+  background: #022e69;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-contato form .btn-enviar:hover {
+  background: #045acd;
+}
+
+.brand-home {
+  padding: 25px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.brand-home .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brand-home .logo img {
+  width: 100px;
+}
+
+.brand-home .logo h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #022e69;
+}
+
+.brand-home .logo h1 span {
+  color: #38b6ff;
+}
+
 .ad {
   background: #f0f0f0;
   display: -webkit-box;
@@ -295,10 +538,27 @@ header .btn-extensao:hover {
   padding: 10px;
 }
 
+.ad.single {
+  background: none;
+  margin: 50px 0;
+}
+
 .ad .ad-item {
   width: 728px;
   height: 90px;
   background: #fff;
+}
+
+@media (max-width: 768px) {
+  .ad.desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .ad-col {
+    max-width: 300px !important;
+  }
 }
 
 .secao-tabelas {
