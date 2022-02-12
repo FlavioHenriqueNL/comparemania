@@ -427,6 +427,91 @@ footer .menu li a:hover {
   margin-top: 5px;
 }
 
+.page-calculadora {
+  padding: 50px 0 100px;
+}
+
+.page-calculadora .titulo-pagina {
+  margin-bottom: 50px;
+}
+
+.page-calculadora .descricao-detalhe {
+  font-size: 24px;
+  text-align: justify;
+  color: #4b4b4b;
+  background: #a0c8fd;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.page-calculadora header {
+  background: #38b6ff;
+  padding: 10px 0;
+  border: 1px solid #38b6ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.page-calculadora header h1 {
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+}
+
+.page-calculadora form {
+  padding: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.page-calculadora form select {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.page-calculadora form .form-group {
+  margin-bottom: 35px;
+}
+
+.page-calculadora form .form-group label {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+
+.page-calculadora form .form-group .form-control {
+  height: 60px;
+}
+
+.page-calculadora form .btn-enviar {
+  background: #022e69;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-calculadora form .btn-enviar:hover {
+  background: #045acd;
+}
+
+.page-calculadora form .atualizacao {
+  margin-top: 25px;
+  color: #4b4b4b;
+  font-size: 18px;
+}
+
 .titulo-pagina {
   padding-left: 25px;
   border-left: 12px solid #022e69;
@@ -555,7 +640,7 @@ footer .menu li a:hover {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .ad-col {
     max-width: 300px !important;
   }
