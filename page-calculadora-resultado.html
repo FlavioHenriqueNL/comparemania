@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./assets/bibliotecas/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+	<header>
+		<section class="ad desktop">
+			<div class="ad-item">
+				<a href="https://bancointer.onelink.me/nyEn/30715cf6" target="_blank">
+					<img src="https://www.comparemania.com.br/img/inter_728x90.png" alt="Cashback Banco Inter">
+				</a>
+			</div>
+		</section>
+
+		<section class="cabecalho">
+			<div class="listras">
+				<div class="listra"></div>
+			</div>
+
+			<div class="container">
+				<div class="row align-items-end">
+					<div class="offset-md-10 offset-8 col-md-2 col-4">
+						<section class="redes-sociais">
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-youtube"></i></a>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<a href="/" class="brand-home">
+				<div class="logo">
+					<img src="./assets/img/logo.png" alt="">
+					<h1>Compare<span>mania</span></h1>
+				</div>
+			</a>
+
+			<section class="search">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-auto d-md-none d-block">
+							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+								aria-controls="offcanvasNavbar">
+								<i class="fas fa-bars"></i>
+							</button>
+						</div>
+						<div class="col">
+							<form action="" method="" class="procura">
+								<div class="form-group d-flex">
+									<input type="text" class="form-control" placeholder="Procure a loja aqui" name="" id="">
+									<input class="btn-submit" type="submit" value="Procurar">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</section>
+
+		<nav class="navbar navbar-expand-md">
+			<div class="container">
+
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="barra-navegacao list-group navbar-nav">
+							<li><a href="#">Pontos/Milhas</a></li>
+							<li><a href="#">Cashback</a></li>
+							<li><a href="#">Programas de Recompensas</a></li>
+							<li><a href="#">Super Cashback</a></li>
+							<li><a href="#">Comparador</a></li>
+							<li><a href="#">Calculadora de Milhas</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section>
+			<div class="row g-0">
+				<div class="col-xl-10 col-md-9 col-sm-8 ">
+
+					<section class="simple-marquee-container">
+						<div class="marquee">
+
+							<ul class="marquee-content-items">
+								<li id="stock_dolar_index">USD R$ 5,3681 <span class="ticker-item-positive"> +0,0000
+									</span></li>
+								<li id="stock_euro_index">EUR R$ 5,9822 <span class="ticker-item-positive"> +0,0000
+									</span></li>
+								<li id="stock_ambev_index">ABEV3 R$ 14,93 <span class="ticker-item-negative"> -3,05%
+									</span></li>
+								<li id="stock_bb_index">BBAS3 R$ 32,49 <span class="ticker-item-positive"> +0,62%
+									</span></li>
+							</ul>
+							<ul class="marquee-content-items">
+								<li id="stock_dolar_index">USD R$ 5,3681 <span class="ticker-item-positive"> +0,0000
+									</span></li>
+								<li id="stock_euro_index">EUR R$ 5,9822 <span class="ticker-item-positive"> +0,0000
+									</span></li>
+								<li id="stock_ambev_index">ABEV3 R$ 14,93 <span class="ticker-item-negative"> -3,05%
+									</span></li>
+								<li id="stock_bb_index">BBAS3 R$ 32,49 <span class="ticker-item-positive"> +0,62%
+									</span></li>
+							</ul>
+
+						</div>
+					</section>
+
+				</div>
+
+				<div class="col-xl-2 col-md-3 col-sm-4">
+					<a class="btn-extensao"
+						href="https://chrome.google.com/webstore/detail/melhor-ganho-cashback-pon/delekmlgfgpjjafoklhpnejlgdgacgjk?hl=pt-BR"
+						target="_blank">
+						<img src="assets/img/google-chrome.svg" width="35" height="35" class="ml-1 pt-1 pb-1">
+						<strong class="small font-weight-bold pr-2 text-decoration-none">Usar no Chrome</strong>
+					</a>
+				</div>
+
+			</div>
+		</section>
+	</header>
+
+	<main class="page-calculadora page-resultado-cotacao">
+
+		<div class="container">
+			<div class="titulo-pagina">
+				<h1>Resultado da cotação para {{empresa}}</h1>
+				<p>Cotação para {{quantidade de milhas}}</p>
+			</div>
+		</div>
+		<section class="ad desktop">
+			<div class="ad-item">
+				<a href="https://bancointer.onelink.me/nyEn/30715cf6" target="_blank">
+					<img src="https://www.comparemania.com.br/img/inter_728x90.png" alt="Cashback Banco Inter">
+				</a>
+			</div>
+		</section>
+
+		<section class="resultado-cotacao">
+
+			<div class="container">
+				<div class="row gy-4 justify-content-center">
+					<div class="col">
+						<div class="row gy-4">
+							<div class="col-md-6 col-12">
+								<section class="card box-cotacao">
+
+									<!-- 
+
+									 -->
+
+									<figure class="logo-comprador">
+										<img src="./assets/img/logo-hotmilhas.svg" alt="Hotmilhas">
+									</figure>
+
+									<article class="cotacao-container">
+										<div class="valor">
+											<div class="">
+												<h6 class="text-600">Em 1 dia:</h6>
+												<p class="valor-milheiro">R$14.50/milheiro</p>
+											</div>
+
+											<div class="progress" style="height:5px">
+
+												<!-- 
+													Barra funciona com o seguinte calculo: 
+													(valor do milheiro / valor máximo possível do milheiro) * 100
+													ex.:
+													(14.50/30)*100 =  0,4833 * 100 = 48,33%
+
+													colocar valor final no style width;
+
+													bg-danger - Quando o valor caiu;
+													bg-success - Quando o valor subir;
+												-->
+
+												<div class="progress-bar rounded-3 bg-danger" role="progressbar" style="width: 48,33%"
+													aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+
+										</div>
+
+										<div class="valor-absoluto">
+											<p>R$3625.00</p>
+										</div>
+										<div class="variacao">
+											<!-- 
+												text-sucess, fa-caret-up - Caso valor subiu;
+												text-danger, fa-caret-down - Caso valor caiu;
+											 -->
+											<p class="text-danger">1.5% <i class="fa-solid fa-caret-down "></i></p>
+										</div>
+
+									</article>
+									<article class="cotacao-container">
+										<div class="valor">
+											<div class="">
+												<h6 class="text-600">Em 30 dias:</h6>
+												<p class="valor-milheiro">R$14.50/milheiro</p>
+											</div>
+
+											<div class="progress" style="height:5px">
+
+												<!-- 
+													Barra funciona com o seguinte calculo: 
+													valor do milheiro / valor máximo possível do milheiro) 
+												-->
+
+												<div class="progress-bar rounded-3 bg-danger" role="progressbar" 
+													style="width: 50%"
+													aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+
+										</div>
+
+										<div class="valor-absoluto">
+											<p>R$3625.00</p>
+										</div>
+										<div class="variacao">
+											<!-- 
+												text-sucess, fa-caret-up - Caso valor subiu;
+												text-danger, fa-caret-down - Caso valor caiu;
+											 -->
+											<p class="text-danger">1.5% <i class="fa-solid fa-caret-down "></i></p>
+										</div>
+
+									</article>
+									<article class="cotacao-container">
+										<div class="valor">
+											<div class="">
+												<h6 class="text-600">Em 45 dias:</h6>
+												<p class="valor-milheiro">R$14.50/milheiro</p>
+											</div>
+
+											<div class="progress" style="height:5px">
+
+												<!-- 
+													Barra funciona com o seguinte calculo: 
+													valor do milheiro / valor máximo possível do milheiro) 
+												-->
+
+												<div class="progress-bar rounded-3 bg-danger" role="progressbar" style="width: 50%"
+													aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+
+										</div>
+
+										<div class="valor-absoluto">
+											<p>R$3625.00</p>
+										</div>
+										<div class="variacao">
+											<!-- 
+												text-sucess, fa-caret-up - Caso valor subiu;
+												text-danger, fa-caret-down - Caso valor caiu;
+											 -->
+											<p class="text-danger">1.5% <i class="fa-solid fa-caret-down "></i></p>
+										</div>
+
+									</article>
+
+									<article class="cotacao-container">
+										<div class="valor">
+											<div class="">
+												<h6 class="text-600">Em 60 dias:</h6>
+												<p class="valor-milheiro">R$14.50/milheiro</p>
+											</div>
+
+											<div class="progress" style="height:5px">
+
+												<!-- 
+													Barra funciona com o seguinte calculo: 
+													valor do milheiro / valor máximo possível do milheiro) 
+												-->
+
+												<div class="progress-bar rounded-3 bg-danger" role="progressbar" style="width: 50%"
+													aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+
+										</div>
+
+										<div class="valor-absoluto">
+											<p>R$3625.00</p>
+										</div>
+										<div class="variacao">
+											<!-- 
+												text-sucess, fa-caret-up - Caso valor subiu;
+												text-danger, fa-caret-down - Caso valor caiu;
+											 -->
+											<p class="text-danger">1.5% <i class="fa-solid fa-caret-down "></i></p>
+										</div>
+
+									</article>
+
+									<a href="#" class="btn-visitar">Visitar o site</a>
+
+								</section>
+
+							</div>
+
+							<div class="col-md-6 col-12">
+								<section class="card box-cotacao">
+
+									<!-- 
+
+									 -->
+
+									<figure class="logo-comprador">
+										<img src="./assets/img/logo-maxmilhas.png" alt="maxmilhas">
+									</figure>
+
+									<article class="cotacao-container">
+										<div class="valor">
+											<div class="">
+												<h6 class="text-600">Em 1 dia:</h6>
+												<p class="valor-milheiro">R$14.50/milheiro</p>
+											</div>
+
+											<div class="progress" style="height:5px">
+
+												<!-- 
+													Barra funciona com o seguinte calculo: 
+													valor do milheiro / valor máximo possível do milheiro) 
+												-->
+
+												<div class="progress-bar rounded-3 bg-success" role="progressbar" style="width: 50%"
+													aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+
+										</div>
+
+										<div class="valor-absoluto">
+											<p>R$3625.00</p>
+										</div>
+										<div class="variacao">
+											<p class="text-sucess">1.5% <i class="fa-solid fa-caret-down "></i></p>
+										</div>
+
+									</article>
+
+									<a href="#" class="btn-visitar">Visitar o site</a>
+
+								</section>
+
+							</div>
+
+							<div class="col-md-6 col-12">
+								<section class="card box-cotacao">
+
+									<!-- 
+
+									 -->
+
+									<figure class="logo-comprador">
+										<img src="./assets/img/logo-bankmilhas.png" alt="bankmilhas">
+									</figure>
+
+									<article class="cotacao-container">
+										<div class="valor">
+											<div class="">
+												<h6 class="text-600">Em 1 dia:</h6>
+												<p class="valor-milheiro">R$14.50/milheiro</p>
+											</div>
+
+											<div class="progress" style="height:5px">
+
+												<!-- 
+													Barra funciona com o seguinte calculo: 
+													valor do milheiro / valor máximo possível do milheiro) 
+												-->
+
+												<div class="progress-bar rounded-3 bg-danger" role="progressbar" style="width: 50%"
+													aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+
+										</div>
+
+										<div class="valor-absoluto">
+											<p>R$3625.00</p>
+										</div>
+										<div class="variacao">
+											<!-- 
+												text-sucess, fa-caret-up - Caso valor subiu;
+												text-danger, fa-caret-down - Caso valor caiu;
+											 -->
+											<p class="text-danger">1.5% <i class="fa-solid fa-caret-down "></i></p>
+										</div>
+
+									</article>
+
+									<a href="#" class="btn-visitar">Visitar o site</a>
+
+								</section>
+
+							</div>
+
+							<div class="col-md-6 col-12">
+								<section class="card box-cotacao">
+
+									<!-- 
+
+									 -->
+
+									<figure class="logo-comprador">
+										<img src="./assets/img/logo-credimilhas.png" alt="Credmilhas">
+									</figure>
+
+									<article class="cotacao-container">
+										<div class="valor">
+											<div class="">
+												<h6 class="text-600">Em 1 dia:</h6>
+												<p class="valor-milheiro">R$14.50/milheiro</p>
+											</div>
+
+											<div class="progress" style="height:5px">
+
+												<!-- 
+													Barra funciona com o seguinte calculo: 
+													valor do milheiro / valor máximo possível do milheiro) 
+												-->
+
+												<div class="progress-bar rounded-3 bg-danger" role="progressbar" style="width: 50%"
+													aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+
+										</div>
+
+										<div class="valor-absoluto">
+											<p>R$3625.00</p>
+										</div>
+										<div class="variacao">
+											<!-- 
+												text-sucess, fa-caret-up - Caso valor subiu;
+												text-danger, fa-caret-down - Caso valor caiu;
+											 -->
+											<p class="text-danger">1.5% <i class="fa-solid fa-caret-down "></i></p>
+										</div>
+
+									</article>
+
+									<a href="#" class="btn-visitar">Visitar o site</a>
+
+								</section>
+
+							</div>
+
+							<div class="col-12">
+								<div class="descricao-detalhe">
+									<p class="text-center m-0">As informações coletadas para cálculos são atualizadas periodicamente, mas
+										essas informações de momento podem ser alteradas a qualquer momento.</p>
+
+								</div>
+							</div>
+
+							<div class="col-12">
+								<a class="btn-novacotacao" href="/page-calculadora.html">Nova cotação </a>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Coluna de Propaganda -->
+					<div class="col-lg-auto col-12 ad-col">
+						<div class="row justify-content-center">
+							<div class="col-xl-12 col-auto">
+								<script async=""
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+									crossorigin="anonymous" data-checked-head="true"></script>
+								<!-- 300x250 news -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+									data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+										aria-label="Advertisement"
+										style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+											id="aswift_2_anchor"
+											style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+												id="aswift_2" name="aswift_2"
+												style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+												sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+												width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+												allowtransparency="true" scrolling="no" allowfullscreen="true"
+												src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+												data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+												data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+							<div class="col-xl-12 col-auto">
+								<script async=""
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+									crossorigin="anonymous" data-checked-head="true"></script>
+								<!-- 300x250 news -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+									data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+										aria-label="Advertisement"
+										style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+											id="aswift_2_anchor"
+											style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+												id="aswift_2" name="aswift_2"
+												style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+												sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+												width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+												allowtransparency="true" scrolling="no" allowfullscreen="true"
+												src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+												data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+												data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+							<div class="col-xl-12 col-auto">
+								<script async=""
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+									crossorigin="anonymous" data-checked-head="true"></script>
+								<!-- 300x250 news -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+									data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+										aria-label="Advertisement"
+										style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+											id="aswift_2_anchor"
+											style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+												id="aswift_2" name="aswift_2"
+												style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+												sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+												width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+												allowtransparency="true" scrolling="no" allowfullscreen="true"
+												src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+												data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+												data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+							<div class="col-xl-12 col-auto">
+								<script async=""
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+									crossorigin="anonymous" data-checked-head="true"></script>
+								<!-- 300x250 news -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+									data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+										aria-label="Advertisement"
+										style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+											id="aswift_2_anchor"
+											style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+												id="aswift_2" name="aswift_2"
+												style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+												sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+												width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+												allowtransparency="true" scrolling="no" allowfullscreen="true"
+												src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+												data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+												data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+
+
+
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row align-items-between gx-5">
+				<div class="col-xl">
+					<section id="logo-socials">
+						<a href="/" class="brand-home">
+							<div class="logo">
+								<img src="./assets/img/logo.png" alt="">
+								<h1>Compare<span>mania</span></h1>
+							</div>
+						</a>
+
+						<ul class="lista-sociais">
+							<h1>Siga nossas redes:</h1>
+							<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						</ul>
+					</section>
+				</div>
+				<div class="col-xl-auto col-md-4 col-12">
+					<ul class="menu">
+						<h1>INSTITUCIONAL</h1>
+						<li><a href="#">Sobre nós</a></li>
+						<li><a href="#">Política de privacidade</a></li>
+						<li><a href="#">Termos de Uso</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-auto col-md-4 col-12">
+					<ul class="menu">
+						<h1>Páginas</h1>
+						<li><a href="#">Pontos e Milhas</a></li>
+						<li><a href="#">Cashback</a></li>
+						<li><a href="#">Programas de Recompensas</a></li>
+						<li><a href="#">Super Cashback</a></li>
+						<li><a href="#">Calculadora de Milhas</a></li>
+						<li><a href="#">Comparador</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-auto col-md-4 col-12">
+					<ul class="menu">
+						<h1>Informações</h1>
+						<li><a href="#">Contato</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./assets/js/mask.js"></script>
+	<script>
+		var numberMask = IMask(
+			document.getElementById('milhas'),
+			{
+				mask: Number,
+				min: 0,
+				max: 100000000,
+				thousandsSeparator: ' '
+			});
+		// var currencyMask = IMask(
+		// 	document.getElementById('milhas'),
+		// 	{
+		// 		mask: 'R$num',
+		// 		blocks: {
+		// 			num: {
+		// 				// nested masks are available!
+		// 				mask: Number,
+		// 				thousandsSeparator: ' '
+		// 			}
+		// 		}
+		// 	});
+	</script>
+</body>
+
+</html>

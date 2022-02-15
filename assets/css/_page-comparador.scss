@@ -1,0 +1,74 @@
+// CSS REFERENTE A PÁGINA COMPARADOR E A PÁGINA RESULTADO DA COMPARAÇÃO.
+.page-comparador {
+	padding: 50px 0 100px;
+	.titulo-pagina {
+		margin-bottom: 50px;
+	}
+	.descricao-detalhe {
+		font-size: 24px;
+		text-align: justify;
+		color: #4b4b4b;
+		background: lighten($cor-principal, 60%);
+		padding: 25px;
+		border-radius: 15px;
+	}
+
+	header {
+		background: $cor-secundaria;
+		padding: 10px 0;
+		border: 1px solid $cor-secundaria;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		h1 {
+			margin-bottom: 0;
+			color: #fff;
+			text-align: center;
+			font-size: 36px;
+		}
+	}
+	form {
+		padding: 50px;
+		border: 1px solid rgba(0, 0, 0, 0.125);
+		margin-bottom: 50px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+
+		select {
+			background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+				no-repeat right 0.75rem center/8px 10px;
+			appearance: none;
+		}
+		.form-group {
+			margin-bottom: 35px;
+			label {
+				margin-bottom: 10px;
+				font-size: 25px;
+				font-weight: 700;
+				color: #4b4b4b;
+				margin-bottom: 10px;
+			}
+			.form-control {
+				height: 60px;
+			}
+		}
+		.btn-enviar {
+			background: $cor-principal;
+			color: #fff;
+			width: 100%;
+			height: 60px;
+			font-size: 22px;
+			text-transform: uppercase;
+			font-weight: 700;
+			transition: all 0.5s;
+			&:hover {
+				background: lighten($cor-principal, 20%);
+			}
+		}
+
+		.atualizacao{
+			margin-top: 25px;
+			color: #4b4b4b;
+			font-size: 18px;
+		}
+	}
+}

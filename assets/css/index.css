@@ -427,6 +427,91 @@ footer .menu li a:hover {
   margin-top: 5px;
 }
 
+.page-comparador {
+  padding: 50px 0 100px;
+}
+
+.page-comparador .titulo-pagina {
+  margin-bottom: 50px;
+}
+
+.page-comparador .descricao-detalhe {
+  font-size: 24px;
+  text-align: justify;
+  color: #4b4b4b;
+  background: #a0c8fd;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.page-comparador header {
+  background: #38b6ff;
+  padding: 10px 0;
+  border: 1px solid #38b6ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.page-comparador header h1 {
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+}
+
+.page-comparador form {
+  padding: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.page-comparador form select {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.page-comparador form .form-group {
+  margin-bottom: 35px;
+}
+
+.page-comparador form .form-group label {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+
+.page-comparador form .form-group .form-control {
+  height: 60px;
+}
+
+.page-comparador form .btn-enviar {
+  background: #022e69;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-comparador form .btn-enviar:hover {
+  background: #045acd;
+}
+
+.page-comparador form .atualizacao {
+  margin-top: 25px;
+  color: #4b4b4b;
+  font-size: 18px;
+}
+
 .page-calculadora {
   padding: 50px 0 100px;
 }
@@ -512,6 +597,148 @@ footer .menu li a:hover {
   font-size: 18px;
 }
 
+.page-resultado-cotacao {
+  padding-bottom: 0 !important;
+}
+
+.page-resultado-cotacao .resultado-cotacao {
+  padding: 50px 0 100px;
+  background: #f8f9fa;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  height: 100%;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .logo-comprador {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .logo-comprador img {
+  width: 150px;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .cotacao-container {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 25px;
+  padding-bottom: 15px;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .cotacao-container .valor-absoluto p {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .cotacao-container .variacao p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 0;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .cotacao-container .valor {
+  width: 100%;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .cotacao-container .valor h6 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .cotacao-container .valor p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 10px;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .cotacao-container:last-child {
+  margin-bottom: 50px;
+  border-bottom: none !important;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .btn-visitar {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #022e69;
+  color: #022e69;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-resultado-cotacao .resultado-cotacao .box-cotacao .btn-visitar:hover {
+  background: #022e69;
+  color: #fff;
+}
+
+.page-resultado-cotacao .resultado-cotacao .btn-novacotacao {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: #38b6ff;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-resultado-cotacao .resultado-cotacao .btn-novacotacao:hover {
+  background: #022e69;
+}
+
 .titulo-pagina {
   padding-left: 25px;
   border-left: 12px solid #022e69;
@@ -526,6 +753,19 @@ footer .menu li a:hover {
 .titulo-pagina p {
   font-size: 36px;
   color: #4b4b4b;
+}
+
+@media (max-width: 992px) {
+  .titulo-pagina {
+    border-width: 7px;
+    padding-left: 15px;
+  }
+  .titulo-pagina h1 {
+    font-size: 24px;
+  }
+  .titulo-pagina p {
+    font-size: 18px;
+  }
 }
 
 .page-contato {
