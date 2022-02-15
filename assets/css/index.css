@@ -849,6 +849,103 @@ footer .menu li a:hover {
   color: #38b6ff;
 }
 
+#newsletter {
+  margin: 25px 0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+#newsletter .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+#newsletter .newsletter-form {
+  padding: 25px 0 0 25px;
+}
+
+#newsletter .newsletter-form .titulo-pagina {
+  margin-bottom: 25px;
+}
+
+#newsletter .newsletter-form .titulo-pagina h1 {
+  font-size: 32px;
+}
+
+#newsletter .newsletter-form .titulo-pagina p {
+  font-size: 24px;
+}
+
+#newsletter .newsletter-form .form-group {
+  margin-bottom: 25px;
+}
+
+#newsletter .newsletter-form .form-group .form-label {
+  font-weight: 600;
+}
+
+#newsletter .newsletter-form .form-group .form-control {
+  height: 50px;
+  border-color: #022e69;
+}
+
+#newsletter .newsletter-form .btn-enviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  background: #022e69;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#newsletter .thumbnail {
+  border-radius: 5px;
+  background: #38b6ff;
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+#newsletter .thumbnail i {
+  font-size: 120px;
+}
+
+#newsletter.simples .thumbnail {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  #newsletter .thumbnail {
+    display: none;
+  }
+}
+
 .ad {
   background: #f0f0f0;
   display: -webkit-box;
