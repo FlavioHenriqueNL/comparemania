@@ -161,39 +161,288 @@
 			</div>
 		</section>
 
-        <section class="tabela-resultado">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <section class="tabela-ganhos ganhos-milhas">
-                            <header>
-                                <h1>Ganhos com Milhas</h1>
-                            </header>
-                            <div class="valor-gasto">
-                                <h2>Valor a ser gasto</h2>
-                                <p>R$ 1000.00</p>
-                            </div>
-                            <div class="ganho-milhas">
-                                <h2>Melhor opção de cotação para venda</h2>
-                                <p>R$ 27.5 para cada 1000 milhas em Hotmilhas</p>
-                            </div>
-                            <div class="ganhos">
-                                <h2>Nessa compra você pode ganhar</h2>
-                                <p>R$ 55.00</p>
-                            </div>
-                            <div class="transferencia-bonificada">
-                                <h2>Também é possível ter um retorno maior com uma transferência bonificada. No nosso exemplo utilizamos 100% de bonificação</h2>
-                                <p>R$ 110.00</p>
-                            </div>
+		<section class="tabela-resultado">
+			<div class="container">
+				<div class="row gy-5">
+					<div class="col-md-6 col-12">
+						<section class="card tabela-ganhos ganhos-milhas">
+							<div class="card-header">
+								<h1>Ganhos com Milhas</h1>
+							</div>
+							<div class="card-body">
+								<div class="secao valor-gasto">
+									<h2>Valor a ser gasto:</h2>
+									<p>R$ 1000.00</p>
+								</div>
+								<div class="secao ganho-milhas">
+									<h2>Melhor opção de ganho de milhas:</h2>
+									<p>3000 pontos/milhas em Livelo</p>
+								</div>
+								<div class="secao cotacao-venda">
+									<h2>Melhor opção de cotação para venda:</h2>
+									<p>R$ 27.5 para cada 1000 milhas em Hotmilhas</p>
+								</div>
+								<div class="secao ganhos">
+									<h2>Nessa compra você pode ganhar:</h2>
+									<p>R$ 55.00</p>
+								</div>
+								<div class="secao transferencia-bonificada">
+									<h2>Também é possível ter um retorno maior com uma transferência bonificada. No nosso exemplo
+										utilizamos 100% de bonificação</h2>
+									<p>R$ 110.00</p>
+								</div>
 
-                            <a href=""></a>
 
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </section>
-		
+							</div>
+							<a href="#" class="card-footer">
+								Veja aqui
+							</a>
+
+						</section>
+					</div>
+					<div class="col-md-6 col-12 h-100">
+						<section class="card tabela-ganhos ganhos-cashback">
+							<div class="card-header">
+								<h1>Ganhos com cashback</h1>
+							</div>
+							<div class="card-body">
+								<div class="secao valor-gasto">
+									<h2>Valor a ser gasto:</h2>
+									<p>R$ 1000.00</p>
+								</div>
+								<div class="secao ganho-milhas">
+									<h2>Melhor opção de cashback:</h2>
+									<p>4% de cashback em {{cashback}}</p>
+								</div>
+	
+								<div class="secao ganhos">
+									<h2>Nessa compra você pode ganhar:</h2>
+									<p>R$ 55.00</p>
+								</div>
+							</div>
+
+							<a href="#" class="card-footer">
+								Veja aqui
+							</a>
+						</section>
+
+						<section class="observacoes">
+							<h1>Observações</h1>
+
+							<p>Não são considerados os ganhos de pontos no cartão de crédito.</p>
+						</section>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="nova-comparacao">
+			<div class="container">
+				<div class="row mt-5">
+					<div class="col-lg col-12">
+	
+						<header>
+							<h1>Comparador</h1>
+						</header>
+						<form action="">
+							<div class="form-group">
+								<label for="loja">Selecione uma loja</label>
+								<select class="form-control" id="loja" placeholder="Selecione ou digite a loja.">
+									<option value="abc-da-construcao">ABC da Construcao</option>
+									<option value="aliexpress">Aliexpress</option>
+									<option value="amazon">Amazon</option>
+									<option value="americanas">Americanas</option>
+									<option value="artex">Artex</option>
+									<option value="asics">Asics</option>
+									<option value="assist-card">Assist Card</option>
+									<option value="beauty-box">Beauty box</option>
+									<option value="beleza-na-web">Beleza na web</option>
+									<option value="bobo">BoBo</option>
+									<option value="booking">Booking</option>
+									<option value="boticario">Boticário</option>
+									<option value="britania">Britânia</option>
+									<option value="buddha-spa">Buddha Spa</option>
+									<option value="buser">Buser</option>
+									<option value="cabana-magazine">Cabana Magazine</option>
+									<option value="camicado">Camicado</option>
+									<option value="carmen-steffens">Carmen Steffens</option>
+									<option value="carrefour">Carrefour</option>
+									<option value="casas-bahia">Casas Bahia</option>
+									<option value="cea">CEA</option>
+									<option value="centauro">Centauro</option>
+									<option value="cestas-michelli">Cestas Michelli</option>
+									<option value="ciclic">Ciclic</option>
+									<option value="compra-certa">Compra Certa</option>
+									<option value="dafiti">Dafiti</option>
+									<option value="decathlon">Decathlon</option>
+									<option value="drogaria-sao-paulo">Drogaria Sao Paulo</option>
+									<option value="drogarias-pacheco">Drogarias Pacheco</option>
+									<option value="dudalina">Dudalina</option>
+									<option value="dzarm">Dzarm</option>
+									<option value="emprestimo-sim">Empréstimo Sim</option>
+									<option value="estoque">Estoque</option>
+									<option value="etna">Etna</option>
+									<option value="eudora">Eudora</option>
+									<option value="extra">Extra</option>
+									<option value="fast-shop">Fast Shop</option>
+									<option value="foreo">Foreo</option>
+									<option value="giuliana-flores">Giuliana Flores</option>
+									<option value="grand-cru">Grand cru</option>
+									<option value="hering">Hering</option>
+									<option value="hoteiscom">Hoteis.com</option>
+									<option value="insider-store">Insider Store</option>
+									<option value="john-john">John John</option>
+									<option value="kanui">Kanui</option>
+									<option value="le-lis-blanc">Le Lis Blanc</option>
+									<option value="loccitane-au-bresil">Loccitane au Bresil</option>
+									<option value="loccitane-en-provence">Loccitane en Provence</option>
+									<option value="lojas-renner">Lojas Renner</option>
+									<option value="loungerie">Loungerie</option>
+									<option value="madesa-moveis">Madesa Móveis</option>
+									<option value="magazine-luiza">Magazine Luiza</option>
+									<option value="mahogany">Mahogany</option>
+									<option value="mobly">Mobly</option>
+									<option value="movida">Movida</option>
+									<option value="natura">Natura</option>
+									<option value="nautika">Nautika</option>
+									<option value="nespresso">Nespresso</option>
+									<option value="netshoes">Netshoes</option>
+									<option value="novo-mundo">Novo Mundo</option>
+									<option value="okulos">Okulos</option>
+									<option value="osklen">Osklen</option>
+									<option value="polishop">Polishop</option>
+									<option value="ponto">Ponto</option>
+									<option value="porto-faz">Porto Faz</option>
+									<option value="quero-passagem">Quero Passagem</option>
+									<option value="rentalcars">Rentalcars</option>
+									<option value="rentcars">Rentcars</option>
+									<option value="reserva">Reserva</option>
+									<option value="reservecar">Reservecar</option>
+									<option value="riachuelo">Riachuelo</option>
+									<option value="samsonite">Samsonite</option>
+									<option value="samsung">Samsung</option>
+									<option value="santista">Santista</option>
+									<option value="sephora">Sephora</option>
+									<option value="seus-ingressos">Seus Ingressos</option>
+									<option value="shoestock">Shoestock</option>
+									<option value="shoptime">Shoptime</option>
+									<option value="studio-z">Studio Z</option>
+									<option value="submarino">Submarino</option>
+									<option value="tricae">Tricae</option>
+									<option value="trocafone">Trocafone</option>
+									<option value="viajanet">Viajanet</option>
+									<option value="vivara">Vivara</option>
+									<option value="webfones">Webfones</option>
+									<option value="world-wine">World Wine</option>
+									<option value="zarpo">Zarpo</option>
+									<option value="zattini">Zattini</option>
+								</select>
+							</div>
+	
+							<div class="form-group">
+								<label for="valor">Quanto pretende gastar?</label>
+								<input type="tel" name="" id="valor" class="form-control" placeholder="Insira aqui a quantidade">
+							</div>
+	
+							<input type="submit" class="form-control btn btn-enviar" value="Comparar">
+	
+	
+							<p class="atualizacao">Ultima Atualização: 11/02/2022 15:34</p>
+	
+						</form>
+	
+						<section class="ad single desktop">
+							<div class="ad-item">
+								<a href="https://bancointer.onelink.me/nyEn/30715cf6" target="_blank">
+									<img src="https://www.comparemania.com.br/img/inter_728x90.png" alt="Cashback Banco Inter">
+								</a>
+							</div>
+						</section>
+					</div>
+	
+					<div class="col-lg-auto col-12 ad-col">
+						<div class="row justify-content-center">
+							<div class="col-xl-12 col-auto">
+								<script async=""
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+									crossorigin="anonymous" data-checked-head="true"></script>
+								<!-- 300x250 news -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+									data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+										aria-label="Advertisement"
+										style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+											id="aswift_2_anchor"
+											style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+												id="aswift_2" name="aswift_2"
+												style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+												sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+												width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+												allowtransparency="true" scrolling="no" allowfullscreen="true"
+												src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+												data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+												data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+							<div class="col-xl-12 col-auto">
+								<script async=""
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+									crossorigin="anonymous" data-checked-head="true"></script>
+								<!-- 300x250 news -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+									data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+										aria-label="Advertisement"
+										style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+											id="aswift_2_anchor"
+											style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+												id="aswift_2" name="aswift_2"
+												style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+												sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+												width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+												allowtransparency="true" scrolling="no" allowfullscreen="true"
+												src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+												data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+												data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+							<div class="col-xl-12 col-auto">
+								<script async=""
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1886073696560468"
+									crossorigin="anonymous" data-checked-head="true"></script>
+								<!-- 300x250 news -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-1886073696560468" data-ad-slot="2999747053" data-adsbygoogle-status="done"
+									data-ad-status="filled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement"
+										aria-label="Advertisement"
+										style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+											id="aswift_2_anchor"
+											style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+												id="aswift_2" name="aswift_2"
+												style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;"
+												sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+												width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+												allowtransparency="true" scrolling="no" allowfullscreen="true"
+												src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1886073696560468&amp;output=html&amp;h=250&amp;slotname=2999747053&amp;adk=3424706976&amp;adf=1545976450&amp;pi=t.ma~as.2999747053&amp;w=300&amp;lmt=1643487435&amp;psa=1&amp;format=300x250&amp;url=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTcuMC40NjkyLjk5IixbXSxudWxsLG51bGwsIjY0Il0.&amp;dt=1643487435520&amp;bpp=2&amp;bdt=812&amp;idt=166&amp;shv=r20220119&amp;mjsv=m202201200301&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0d281910029f49b1-22bcb5d824c700f0%3AT%3D1617297478%3ART%3D1617297478%3AS%3DALNI_MYg4a1sthQrKciQ8QNvjw4ftKIURw&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=6786248733895&amp;frm=20&amp;pv=1&amp;ga_vid=1022535639.1615998712&amp;ga_sid=1643487436&amp;ga_hid=1928623835&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=43&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=1240&amp;ady=1385&amp;biw=1583&amp;bih=772&amp;scr_x=0&amp;scr_y=0&amp;eid=42530530%2C31063246%2C21067496&amp;oid=2&amp;pvsid=3900993415109463&amp;pem=591&amp;tmod=747342666&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.comparemania.com.br%2F&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1600%2C789&amp;vis=1&amp;rsz=o%7Co%7CpeEbr%7C&amp;abl=NS&amp;pfx=0&amp;alvm=r20220126&amp;fu=1024&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=SM7KEi0vIn&amp;p=https%3A//www.comparemania.com.br&amp;dtd=178"
+												data-google-container-id="a!3" data-google-query-id="CJimuObj1_UCFRqAlQIdPyEKuA"
+												data-load-complete="true"></iframe></ins></ins></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		</section>
+
 
 
 	</main>

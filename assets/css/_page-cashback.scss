@@ -1,0 +1,69 @@
+.tabela-empresas-cashback{
+  margin-top: 35px;
+}
+
+.tabela-empresas{
+  th {
+    background: #496ba9 !important;
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    border: 1px solid #fff;
+    color: #fff !important;
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 19px;    
+    max-width: 75px;
+    word-wrap: break-word;
+    vertical-align: middle;
+    &:first-child{
+      border-top-left-radius: 15px;
+    }
+    &:last-child{
+      border-top-right-radius: 15px;
+    }
+    p{
+      margin: 0;
+    }
+    @media(max-width: 1200px){
+      font-size: 12px;
+    }
+  }
+  tbody{
+    border-top: none !important;
+    tr{
+      td{
+        a{
+          font-size: 20px;
+          color: #4b4b4b;
+          font-weight: 600;
+          text-decoration: none;
+          &:hover{
+            color: #000;
+          }
+          @media(max-width: 1200px){
+            font-size: 16px;
+          }
+          
+        }
+        &:nth-child(1){
+          max-width: 150px;
+          a{
+            font-size: 22px;
+            @media(max-width: 1200px){
+              font-size: 16px;
+            }
+          }
+        }
+        &:nth-child(2){
+          background: #d4edda;
+          
+        }
+      }
+    }
+  }
+}
+
+.page-cashback{
+  padding: 50px 0;
+}

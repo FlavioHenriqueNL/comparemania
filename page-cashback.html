@@ -161,29 +161,626 @@
 			</div>
 		</section>
 
-    <section class="lista-empresas-cashback">
+		<section class="lista-empresas-cashback">
 
-      <section class="filtro">
-        <div class="container">
+			<section class="filtro-busca container">
+				<form>
+					<div class="row">
+						<div class="form-group col-auto">
+							<label for="select-az" class="form-label">A-Z</label>
+							<select class="form-control" id="select-az">
+								<!-- onchange="selectedAZ()"   -->
+								<option></option>
+								<option>#</option>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+								<option>D</option>
+								<option>E</option>
+								<option>F</option>
+								<option>G</option>
+								<option>H</option>
+								<option>I</option>
+								<option>J</option>
+								<option>K</option>
+								<option>L</option>
+								<option>M</option>
+								<option>N</option>
+								<option>O</option>
+								<option>P</option>
+								<option>Q</option>
+								<option>R</option>
+								<option>S</option>
+								<option>T</option>
+								<option>U</option>
+								<option>V</option>
+								<option>W</option>
+								<option>X</option>
+								<option>Y</option>
+								<option>Z</option>
+							</select>
+						</div>
+						<div class="form-group col-auto">
+							<label class="form-label" for="select-most">Ordernar por:</label>
+							<select class="form-control" id="select-most">
+								<!-- onchange="selectOrder()" -->
+								<option value="1" id="lblMost">Mais Popular</option>
+								<option value="2" id="lblAmount">Maior Ganho</option>
+							</select>
+						</div>
+					</div>
+				</form>
+			</section>
 
-        </div>
-      </section>
 
-      <section class="tabela-empresas-cashback tabela-empresas">
+			
+				<section class="tabela-empresas-cashback tabela-empresas table-responsive-md">
+					<table class="table table-striped container">
+						<thead>
+							<tr>
+								<th>
+									<p>Loja</p>
+								</th>
+								<th>
+									<p>Melhor Ganho</p>
+								</th>
+								<th>
+									<!-- <img src="/img/banco-inter.png"
+										width="30" height="30" alt="Banco Inter"> -->
+									<p>Banco Inter</p>
+								</th>
+								<th>
+									<!-- <img src="/img/meliuz.png" width="30"
+										height="30" alt="Meliuz"> -->
+									<p>Meliuz</p>
+								</th>
+								<th>
+									<!-- <img src="/img/ame.png" width="30"
+										height="30" alt="AME"> -->
+									<p>AME</p>
+								</th>
+								<th>
+									<!-- <img src="/img/cuponomia.png" width="30"
+										alt="Cuponomia" height="30"> -->
+									<p>Cuponomia</p>
+								</th>
+								<th>
+									<!-- <img src="/img/mooba.png" width="30"
+										height="30" alt="Mooba"> -->
+									<p>Mooba</p>
+								</th>
+								<th>
+									<!-- <img src="/img/mycashback.png"
+										width="30" height="30" alt="My Cashback"> -->
+									<p>My Cashback</p>
+								</th>
+								<th>
+									<!-- <img src="/img/LetyShops.png" width="30"
+										height="30" alt="Lety Shops"> -->
+									<p>Lety Shops</p>
+								</th>
+								<th>
+									<p>Outros</p>
+								</th>
+							</tr>
+						</thead>
+	
+						<tbody>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/americanas">Americanas</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/americanas">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/americanas">7%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/amazon">Amazon</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/amazon">10%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon">9%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon">5.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/amazon">10%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/magazine-luiza">Magazine Luiza</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/magazine-luiza">10%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza">10%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/magazine-luiza">3%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/casas-bahia">Casas Bahia</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/casas-bahia">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia">2.1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/casas-bahia">3%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/submarino">Submarino</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/submarino">5.6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino">5.6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/submarino">3.15%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/mash">Mash</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/mash">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mash">8%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/centauro">Centauro</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/centauro">8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro">5.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro">6.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/centauro">8%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/eletrum">Eletrum</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/eletrum">10%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum">1.4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum">10%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum">1.7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/eletrum">10%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/eleve-life">Eleve Life</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/eleve-life">20%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">20%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">6.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">4.4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">3.7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/eleve-life">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/netshoes">Netshoes</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/netshoes">9%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes">8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes">8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/netshoes">9%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/okulos">Okulos</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/okulos">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos">5.2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos">8.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/okulos">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/shoptime">Shoptime</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/shoptime">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime">2.25%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shoptime">3.5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/like-cosmeticos">Like Cosméticos</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/like-cosmeticos">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/like-cosmeticos">3%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/olx">OLX</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/olx">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/olx"></a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/aliexpress">Aliexpress</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/aliexpress">9%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress">9%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/aliexpress">8.4%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/ponto">Ponto</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/ponto">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/ponto">15%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/zattini">Zattini</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/zattini">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini">6.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/zattini">6%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/extra">Extra</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/extra">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/extra">3%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/acer">Acer</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/acer">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer">0.75%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer">15%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer">0.8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/acer">1.05%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/natura">Natura</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/natura">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura">3.7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/natura">7%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/freeco">FreeCô</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/freeco">20%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco">20%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/freeco">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/droga-raia">Droga Raia</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/droga-raia">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia">4.2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/droga-raia">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/cea">C&amp;A</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/cea">12%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea">2.1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea">5.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea">8.1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea">4.25%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/cea">12%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/kabum">KaBuM!</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/kabum">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum">0.7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum">0.57%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/kabum">1%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/carrefour">Carrefour</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/carrefour">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour">2.1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/carrefour">3%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/mr-cat">Mr Cat</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/mr-cat">6.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat">5.9%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat">6.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat">5.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mr-cat">5.5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/booking">Booking</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/booking">5.01%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking">5.01%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/booking">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/drogasil">Drogasil</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/drogasil">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil">4.2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/drogasil">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/dafiti">Dafiti</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/dafiti">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti">4.2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/dafiti">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/fast-shop">Fast Shop</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/fast-shop">8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop">1.4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop">1.8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/fast-shop">8%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/shopee">Shopee</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/shopee">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee">0.4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee">1%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee">4.2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/shopee">5.88%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/loft">Loft</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/loft">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/loft"></a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/sephora">Sephora</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/sephora">7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/sephora">7%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/compra-certa">Compra Certa</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/compra-certa">8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa">2.8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa">2.4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/compra-certa">8%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/mac-cosmeticos">MAC Cosméticos</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/mac-cosmeticos">9%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos">5.6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/mac-cosmeticos">9%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/adidas">Adidas</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/adidas">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas">2.7%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/adidas">3%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/camicado">Camicado</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/camicado">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado">3.6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/camicado">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/etna">Etna</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/etna">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna">1.6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna">1.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/etna">1.5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/decathlon">Decathlon</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/decathlon">8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon">2.8%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon">2%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon">2.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/decathlon">8%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/lojas-renner">Lojas Renner</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/lojas-renner">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner">6%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner">4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/lojas-renner">5%</a></td>
+							</tr>
+							<tr class="py-2">
+								<td><a href="/promocao/cashback/epoca-cosmeticos">Época Cosméticos</a></td>
+								<td class="text-center alert-success text-dark"><a href="/promocao/cashback/epoca-cosmeticos">5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos">3%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos">3.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos">3.4%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos">4.5%</a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos"></a></td>
+								<td class="text-center"><a href="/promocao/cashback/epoca-cosmeticos">5%</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
 
-      </section>
+			<nav class="pagination-container" aria-label="Page navigation">
+				<ul class="pagination">
+					<li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+					<li class="page-item active"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+				</ul>
+			</nav>
 
-      <nav aria-label="Page navigation">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
-        </ul>
-      </nav>
+		</section>
 
-    </section>
+		<section class="ad desktop">
+			<div class="ad-item">
+				<a href="https://bancointer.onelink.me/nyEn/30715cf6" target="_blank">
+					<img src="https://www.comparemania.com.br/img/inter_728x90.png" alt="Cashback Banco Inter">
+				</a>
+			</div>
+		</section>
 
 	</main>
 
@@ -235,21 +832,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./assets/js/mask.js"></script>
-	<script>
-		var currencyMask = IMask(
-			document.getElementById('valor'),
-			{
-				mask: 'R$num',
-				blocks: {
-					num: {
-						// nested masks are available!
-						mask: Number,
-						thousandsSeparator: '.'
-					}
-				}
-			});
-	</script>
 </body>
 
 </html>

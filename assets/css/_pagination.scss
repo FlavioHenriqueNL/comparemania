@@ -1,0 +1,26 @@
+.pagination-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0;
+  .pagination{
+    .page-item{
+      .page-link{
+        
+        &:hover, &.active{
+          background: $cor-secundaria;
+          color: #fff;
+        }
+      }
+      &:first-child, &:last-child{
+        .page-link{
+          background: $cor-principal;
+          color: #fff;
+          &:hover{
+            background: $cor-secundaria;
+          }
+        }
+      }
+    }
+  }
+}

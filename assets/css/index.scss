@@ -4,6 +4,7 @@
 @import "supercashback";
 
 //Páginas Internas
+@import 'page-cashback';
 @import 'page-comparador';
 @import 'page-calculadora';
 @import 'page-contato';
@@ -12,6 +13,8 @@
 // Componentes
 @import 'logo';
 @import 'newsletter';
+@import 'filter';
+@import 'pagination';
 @import 'ad';
 
 .secao-tabelas {

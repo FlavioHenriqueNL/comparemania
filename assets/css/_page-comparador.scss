@@ -65,10 +65,99 @@
 			}
 		}
 
-		.atualizacao{
+		.atualizacao {
 			margin-top: 25px;
 			color: #4b4b4b;
 			font-size: 18px;
 		}
 	}
+}
+
+.page-resultado-comparador {
+	.tabela-resultado {
+		padding: 50px;
+		.tabela-ganhos {
+			border-radius: 15px;
+			box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.25);
+			.card-header {
+				background: $cor-principal;
+				color: #fff;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px;
+				h1 {
+					text-align: center;
+					font-size: 24px;
+					padding: 5px 0;
+					margin-bottom: 0;
+				}
+			}
+			.secao {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 2px solid #ccc;
+				padding: 15px;
+
+				h2 {
+					font-size: 18px;
+					margin-bottom: 0;
+				}
+				p{
+					font-size: 16px;
+					margin: 0;
+					font-weight: 600;
+					text-align: right;
+				}
+				&.ganhos, &.transferencia-bonificada{
+					display: block;
+					h2{
+						margin-bottom: 15px;
+					}
+					p{
+						font-size: 42px;
+						font-weight: 700;
+						color: $cor-principal;
+					}
+				}
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+			.card-footer{
+				color: $cor-principal;
+				background: darken($cor-secundaria, 40%);
+				transition: all 0.125s;
+				text-align: center;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 18px;
+				text-transform: uppercase;
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				border: 3px solid darken($cor-secundaria, 40%);
+				color: #fff;
+				&:hover{
+					background: $cor-principal;
+				}
+			}
+		}
+		.observacoes{
+			margin-top: 50px;
+			text-align: justify;
+			color: #4b4b4b;
+			background: lighten($cor-principal, 60%);
+			padding: 25px;
+			border-radius: 15px;
+			
+			h1{
+				font-size: 22px;
+				text-transform: uppercase;
+			}
+			p{
+				font-size: 18px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
 }

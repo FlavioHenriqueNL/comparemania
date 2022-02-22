@@ -427,6 +427,89 @@ footer .menu li a:hover {
   margin-top: 5px;
 }
 
+.tabela-empresas-cashback {
+  margin-top: 35px;
+}
+
+.tabela-empresas th {
+  background: #496ba9 !important;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* Don't forget this, required for the stickiness */
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  color: #fff !important;
+  font-weight: 700 !important;
+  text-align: center;
+  font-size: 19px;
+  max-width: 75px;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+.tabela-empresas th:first-child {
+  border-top-left-radius: 15px;
+}
+
+.tabela-empresas th:last-child {
+  border-top-right-radius: 15px;
+}
+
+.tabela-empresas th p {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .tabela-empresas th {
+    font-size: 12px;
+  }
+}
+
+.tabela-empresas tbody {
+  border-top: none !important;
+}
+
+.tabela-empresas tbody tr td a {
+  font-size: 20px;
+  color: #4b4b4b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tabela-empresas tbody tr td a:hover {
+  color: #000;
+}
+
+@media (max-width: 1200px) {
+  .tabela-empresas tbody tr td a {
+    font-size: 16px;
+  }
+}
+
+.tabela-empresas tbody tr td:nth-child(1) {
+  max-width: 150px;
+}
+
+.tabela-empresas tbody tr td:nth-child(1) a {
+  font-size: 22px;
+}
+
+@media (max-width: 1200px) {
+  .tabela-empresas tbody tr td:nth-child(1) a {
+    font-size: 16px;
+  }
+}
+
+.tabela-empresas tbody tr td:nth-child(2) {
+  background: #d4edda;
+}
+
+.page-cashback {
+  padding: 50px 0;
+}
+
 .page-comparador {
   padding: 50px 0 100px;
 }
@@ -510,6 +593,113 @@ footer .menu li a:hover {
   margin-top: 25px;
   color: #4b4b4b;
   font-size: 18px;
+}
+
+.page-resultado-comparador .tabela-resultado {
+  padding: 50px;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos {
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .card-header {
+  background: #022e69;
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .card-header h1 {
+  text-align: center;
+  font-size: 24px;
+  padding: 5px 0;
+  margin-bottom: 0;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .secao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+  padding: 15px;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .secao h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .secao p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .secao.ganhos, .page-resultado-comparador .tabela-resultado .tabela-ganhos .secao.transferencia-bonificada {
+  display: block;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .secao.ganhos h2, .page-resultado-comparador .tabela-resultado .tabela-ganhos .secao.transferencia-bonificada h2 {
+  margin-bottom: 15px;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .secao.ganhos p, .page-resultado-comparador .tabela-resultado .tabela-ganhos .secao.transferencia-bonificada p {
+  font-size: 42px;
+  font-weight: 700;
+  color: #022e69;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .secao:last-child {
+  border-bottom: none;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .card-footer {
+  color: #022e69;
+  background: #00446b;
+  -webkit-transition: all 0.125s;
+  transition: all 0.125s;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 3px solid #00446b;
+  color: #fff;
+}
+
+.page-resultado-comparador .tabela-resultado .tabela-ganhos .card-footer:hover {
+  background: #022e69;
+}
+
+.page-resultado-comparador .tabela-resultado .observacoes {
+  margin-top: 50px;
+  text-align: justify;
+  color: #4b4b4b;
+  background: #a0c8fd;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.page-resultado-comparador .tabela-resultado .observacoes h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.page-resultado-comparador .tabela-resultado .observacoes p {
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 .page-calculadora {
@@ -944,6 +1134,53 @@ footer .menu li a:hover {
   #newsletter .thumbnail {
     display: none;
   }
+}
+
+.filtro-busca {
+  margin-top: 35px;
+  padding: 25px 50px;
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.filtro-busca .form-group label {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.filtro-busca .form-control {
+  -webkit-appearance: auto !important;
+     -moz-appearance: auto !important;
+          appearance: auto !important;
+}
+
+.pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 35px 0;
+}
+
+.pagination-container .pagination .page-item .page-link:hover, .pagination-container .pagination .page-item .page-link.active {
+  background: #38b6ff;
+  color: #fff;
+}
+
+.pagination-container .pagination .page-item:first-child .page-link, .pagination-container .pagination .page-item:last-child .page-link {
+  background: #022e69;
+  color: #fff;
+}
+
+.pagination-container .pagination .page-item:first-child .page-link:hover, .pagination-container .pagination .page-item:last-child .page-link:hover {
+  background: #38b6ff;
 }
 
 .ad {
