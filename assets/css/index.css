@@ -427,6 +427,115 @@ footer .menu li a:hover {
   margin-top: 5px;
 }
 
+.page-empresa .secao-titulo {
+  margin: 50px 0;
+}
+
+.page-empresa .secao-titulo .titulo-pagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.page-empresa .secao-titulo .titulo-pagina figure {
+  margin-bottom: 0;
+}
+
+.page-empresa .secao-titulo .titulo-pagina figure .store {
+  width: 80px;
+}
+
+.page-empresa .secao-titulo .titulo-pagina h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2e2e2e;
+  margin-bottom: 5px;
+}
+
+.page-empresa .secao-titulo .titulo-pagina h1 {
+  font-size: 28px;
+}
+
+.page-empresa .tabelas-empresa {
+  margin: 50px 0;
+}
+
+.page-empresa .tabelas-empresa .card {
+  margin-bottom: 35px;
+}
+
+.page-empresa .tabelas-empresa .card-header {
+  background: #022e69;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.page-empresa .tabelas-empresa .card-header h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.page-empresa .tabelas-empresa .card-body {
+  padding: 0;
+}
+
+.page-empresa .tabelas-empresa .card-body table {
+  margin: 0;
+}
+
+.page-empresa .tabelas-empresa .card-body table thead {
+  background: #6eabfc;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+}
+
+.page-empresa .tabelas-empresa .card-body table tbody {
+  border-top: none;
+}
+
+.page-empresa .tabelas-empresa .card-body table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.page-empresa .tabelas-empresa .card-body table tbody tr td a {
+  color: #2e2e2e;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-empresa .tabelas-empresa .card-body table tbody tr td.site {
+  width: 45%;
+}
+
+.page-empresa .tabelas-empresa .card-body table tbody tr td.site img {
+  max-width: 30px;
+  margin-right: 15px;
+}
+
+.page-empresa .tabelas-empresa .card-body table tbody tr td.ganho .progress {
+  margin-top: 5px;
+}
+
+.page-empresa .tabelas-empresa .card-body table tbody tr td.ganho .progress, .page-empresa .tabelas-empresa .card-body table tbody tr td.ganho .progress-bar {
+  height: 9px;
+}
+
+.page-empresa .recompensas table tr td.site {
+  width: 35% !important;
+}
+
+.page-empresa .cashback table tr td.site {
+  width: 50% !important;
+}
+
 .tabela-empresas-cashback {
   margin-top: 35px;
 }
