@@ -1,82 +1,81 @@
-.page-empresa{
-  .secao-titulo{
+.page-empresa {
+  .secao-titulo {
     margin: 50px 0;
-    .titulo-pagina{
+    .titulo-pagina {
       display: flex;
       align-items: center;
       gap: 25px;
-      figure{
+      figure {
         margin-bottom: 0;
-        .store{
+        .store {
           width: 80px;
-
         }
       }
-      h2{
+      h2 {
         font-size: 42px;
         font-weight: 700;
         color: #2e2e2e;
         margin-bottom: 5px;
       }
-      h1{
+      h1 {
         font-size: 28px;
       }
     }
   }
 
-  .tabelas-empresa{
+  .tabelas-empresa {
     margin: 50px 0 25px;
-    .card{
+    .card {
       margin-bottom: 35px;
     }
-    .card-header{
+    .card-header {
       background: $cor-principal;
       color: #fff;
       text-align: center;
       padding: 10px 0;
-      h1{
+      h1 {
         font-size: 20px;
         margin-bottom: 0;
       }
     }
-    .card-body{
+    .card-body {
       padding: 0;
-      table{
+      table {
         margin: 0;
-        thead{
+        thead {
           background: lighten($cor-principal, 50%);
           color: #fff;
           text-align: center;
           font-size: 19px;
         }
-        tbody{
+        tbody {
           border-top: none;
-          tr{
-            td{
+          tr {
+            td {
               text-align: center;
               vertical-align: middle;
-              a{
+              a {
                 color: #2e2e2e;
                 font-size: 16px;
                 font-weight: 700;
                 text-decoration: none;
-                &:hover{
+                &:hover {
                   color: $cor-secundaria;
                 }
               }
-              &.site{
+              &.site {
                 width: 45%;
-                img{
+                img {
                   max-width: 30px;
                   margin-right: 15px;
                 }
-               
               }
-              &.ganho{
-                .progress{
+              &.ganho {
+                .progress {
                   margin-top: 5px;
                 }
-                .progress, .progress-bar{
+                .progress,
+                .progress-bar {
                   height: 9px;
                 }
               }
@@ -86,22 +85,22 @@
       }
     }
   }
-  .recompensas{
-    table{
-      tr{
-        td{
-          &.site{
+  .recompensas {
+    table {
+      tr {
+        td {
+          &.site {
             width: 35% !important;
           }
         }
       }
     }
   }
-  .cashback{
-    table{
-      tr{
-        td{
-          &.site{
+  .cashback {
+    table {
+      tr {
+        td {
+          &.site {
             width: 50% !important;
           }
         }
@@ -109,10 +108,10 @@
     }
   }
 
-  .historico{
-    .titulo-secao{
+  .historico,.veja-mais {
+    .titulo-secao {
       margin-bottom: 25px;
-      h1{
+      h1 {
         color: #2e2e2e;
         border-left: 6px solid $cor-principal;
         padding-left: 10px;
@@ -121,9 +120,55 @@
         font-weight: 700;
       }
     }
-    .grafico{
+    .grafico {
       margin: 50px 0;
     }
   }
+}
 
+
+.veja-mais{
+  padding: 50px 0 100px;
+  .titulo-secao{
+    margin-bottom: 50px !important;
+  }
+}
+
+.empresa-box {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 250px;
+  text-decoration: none;
+  
+  figure{
+    max-width: 150px;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .conteudo{
+    text-align: center;
+    color: #2e2e2e;
+    h1{
+      font-size: 24px;
+    }
+  }
+  .vejamais-button{
+    color: #fff;
+    background: $cor-principal;
+    width: 100%;
+    height: 40px;
+    border: none;
+    position: relative;
+    transition: all 0.25s;
+  }
+  &:hover{
+    .vejamais-button{
+      background: lighten($cor-principal, 40%);
+    }
+  }
 }

@@ -555,7 +555,8 @@ footer .menu li a:hover {
   margin-top: 5px;
 }
 
-.page-empresa .tabelas-empresa .card-body table tbody tr td.ganho .progress, .page-empresa .tabelas-empresa .card-body table tbody tr td.ganho .progress-bar {
+.page-empresa .tabelas-empresa .card-body table tbody tr td.ganho .progress,
+.page-empresa .tabelas-empresa .card-body table tbody tr td.ganho .progress-bar {
   height: 9px;
 }
 
@@ -567,11 +568,11 @@ footer .menu li a:hover {
   width: 50% !important;
 }
 
-.page-empresa .historico .titulo-secao {
+.page-empresa .historico .titulo-secao, .page-empresa .veja-mais .titulo-secao {
   margin-bottom: 25px;
 }
 
-.page-empresa .historico .titulo-secao h1 {
+.page-empresa .historico .titulo-secao h1, .page-empresa .veja-mais .titulo-secao h1 {
   color: #2e2e2e;
   border-left: 6px solid #022e69;
   padding-left: 10px;
@@ -580,8 +581,67 @@ footer .menu li a:hover {
   font-weight: 700;
 }
 
-.page-empresa .historico .grafico {
+.page-empresa .historico .grafico, .page-empresa .veja-mais .grafico {
   margin: 50px 0;
+}
+
+.veja-mais {
+  padding: 50px 0 100px;
+}
+
+.veja-mais .titulo-secao {
+  margin-bottom: 50px !important;
+}
+
+.empresa-box {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 250px;
+  text-decoration: none;
+}
+
+.empresa-box figure {
+  max-width: 150px;
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.empresa-box .conteudo {
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.empresa-box .conteudo h1 {
+  font-size: 24px;
+}
+
+.empresa-box .vejamais-button {
+  color: #fff;
+  background: #022e69;
+  width: 100%;
+  height: 40px;
+  border: none;
+  position: relative;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.empresa-box:hover .vejamais-button {
+  background: #3c8efb;
 }
 
 .tabela-empresas-cashback {
