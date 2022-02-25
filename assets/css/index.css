@@ -329,12 +329,18 @@ footer .menu li a:hover {
 
 #supercashback {
   background: #fdfdfe;
-  padding: 50px 0;
+  padding: 50px 0 150px;
 }
 
-#supercashback .titulo {
+#supercashback .titulo-pagina-supercashback {
+  margin-bottom: 35px;
+}
+
+#supercashback .titulo-pagina-supercashback .titulo {
   padding: 5px 25px;
-  max-width: 500px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   background: linear-gradient(158.68deg, #ed0059 0%, #620070 76.66%, #170085 100%);
   color: #fff;
   display: -webkit-box;
@@ -344,19 +350,26 @@ footer .menu li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 5px;
-  font-size: 16px;
 }
 
-#supercashback .titulo svg {
+#supercashback .titulo-pagina-supercashback .titulo h1 {
+  font-size: 32px;
+}
+
+#supercashback .titulo-pagina-supercashback .titulo svg {
   width: 50px;
   height: 50px;
 }
 
+#supercashback .titulo-pagina-supercashback p {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 #supercashback .item-supercashback {
+  position: relative;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -367,9 +380,11 @@ footer .menu li a:hover {
   gap: 15px;
   padding: 25px;
   border-radius: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: #fff;
-  -webkit-transition: background .5s;
-  transition: background .5s;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
 }
 
 #supercashback .item-supercashback:hover {
@@ -400,7 +415,7 @@ footer .menu li a:hover {
 }
 
 #supercashback .item-supercashback .conteudo .item-preco {
-  color: #508991;
+  color: #4B4B4B;
   font-size: 1.2em;
   font-weight: 700;
 }
@@ -425,6 +440,18 @@ footer .menu li a:hover {
   word-break: break-word;
   margin-bottom: 10px;
   margin-top: 5px;
+}
+
+#supercashback .item-supercashback::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(158.68deg, #ed0059 0%, #620070 76.66%, #170085 100%);
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .page-empresa .secao-titulo {
