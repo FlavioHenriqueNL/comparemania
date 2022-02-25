@@ -25,7 +25,7 @@
   }
 
   .tabelas-empresa{
-    margin: 50px 0;
+    margin: 50px 0 25px;
     .card{
       margin-bottom: 35px;
     }
@@ -60,6 +60,9 @@
                 font-size: 16px;
                 font-weight: 700;
                 text-decoration: none;
+                &:hover{
+                  color: $cor-secundaria;
+                }
               }
               &.site{
                 width: 45%;
@@ -103,6 +106,23 @@
           }
         }
       }
+    }
+  }
+
+  .historico{
+    .titulo-secao{
+      margin-bottom: 25px;
+      h1{
+        color: #2e2e2e;
+        border-left: 6px solid $cor-principal;
+        padding-left: 10px;
+        margin-bottom: 0;
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+    .grafico{
+      margin: 50px 0;
     }
   }
 
