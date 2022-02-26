@@ -13,4 +13,16 @@
   .form-control{
     appearance: auto !important;
   }
+
+  .display-button{
+    display: flex;
+    justify-content: space-between;
+    a{
+      color: #4b4b4b;
+      font-size: 25px;
+      &:hover{
+        color: $cor-secundaria;
+      }
+    }
+  }
 }

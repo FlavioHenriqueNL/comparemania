@@ -1,3 +1,7 @@
+.main {
+  padding: 50px 0;
+}
+
 header .cabecalho {
   background: #fafafa;
   position: relative;
@@ -611,6 +615,7 @@ footer .menu li a:hover {
           flex-direction: column;
   min-height: 250px;
   text-decoration: none;
+  margin-bottom: 25px;
 }
 
 .empresa-box figure {
@@ -724,6 +729,10 @@ footer .menu li a:hover {
 }
 
 .page-cashback {
+  padding: 50px 0;
+}
+
+.lista-empresas {
   padding: 50px 0;
 }
 
@@ -1371,6 +1380,24 @@ footer .menu li a:hover {
   -webkit-appearance: auto !important;
      -moz-appearance: auto !important;
           appearance: auto !important;
+}
+
+.filtro-busca .display-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filtro-busca .display-button a {
+  color: #4b4b4b;
+  font-size: 25px;
+}
+
+.filtro-busca .display-button a:hover {
+  color: #38b6ff;
 }
 
 .pagination-container {
