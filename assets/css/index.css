@@ -233,6 +233,18 @@ footer .brand-home .logo {
   }
 }
 
+@media (max-width: 576px) {
+  footer .brand-home {
+    max-width: 280px;
+  }
+  footer .brand-home .logo img {
+    width: 50px;
+  }
+  footer .brand-home .logo h1 {
+    font-size: 24px;
+  }
+}
+
 footer .lista-sociais {
   display: -webkit-box;
   display: -ms-flexbox;
