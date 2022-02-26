@@ -384,6 +384,22 @@ footer .menu li a:hover {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  #supercashback .titulo-pagina-supercashback .titulo {
+    padding: 5px 20px;
+  }
+  #supercashback .titulo-pagina-supercashback .titulo h1 {
+    font-size: 24px;
+  }
+  #supercashback .titulo-pagina-supercashback .titulo svg {
+    width: 35px;
+    height: 35px;
+  }
+  #supercashback .titulo-pagina-supercashback p {
+    font-size: 18px;
+  }
+}
+
 #supercashback .item-supercashback {
   position: relative;
   text-decoration: none;
