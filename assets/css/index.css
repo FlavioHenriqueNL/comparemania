@@ -519,6 +519,10 @@ footer .menu li a:hover {
   font-size: 28px;
 }
 
+.page-empresa .titulo-resultado {
+  border-left: 5px solid #022e69;
+}
+
 .page-empresa .tabelas-empresa {
   margin: 50px 0 25px;
 }
@@ -1488,7 +1492,7 @@ footer .menu li a:hover {
 
 @media (min-width: 1200px) {
   .ad-col {
-    max-width: 300px !important;
+    max-width: 320px !important;
   }
 }
 
