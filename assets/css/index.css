@@ -1428,6 +1428,78 @@ footer .menu li a:hover {
   font-weight: 700 !important;
 }
 
+.page-sobre {
+  background: #f2f2f2;
+  padding: 50px 0 150px;
+}
+
+.page-sobre .titulo-pagina {
+  margin-bottom: 50px;
+}
+
+.page-sobre article {
+  background: #fff;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-sobre article .logo {
+  margin: 25px 0;
+}
+
+.page-sobre article p {
+  font-size: 24px;
+  text-align: justify;
+  color: #4b4b4b;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.page-sobre article .icon {
+  font-size: 120px;
+  color: #022e69;
+}
+
+@media (max-width: 768px) {
+  .page-sobre article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+  }
+  .page-sobre article p {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 18px;
+  }
+  .page-sobre article .icon {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 80px;
+  }
+}
+
+.page-sobre h2 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+
 .tabela-empresas th {
   background: #496ba9 !important;
   position: -webkit-sticky;
@@ -1509,7 +1581,7 @@ footer .menu li a:hover {
   display: block;
 }
 
-.brand-home .logo {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1521,17 +1593,17 @@ footer .menu li a:hover {
           justify-content: center;
 }
 
-.brand-home .logo img {
+.logo img {
   width: 100px;
 }
 
-.brand-home .logo h1 {
+.logo h1 {
   font-size: 36px;
   margin: 0;
   color: #022e69;
 }
 
-.brand-home .logo h1 span {
+.logo h1 span {
   color: #38b6ff;
 }
 
