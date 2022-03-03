@@ -550,6 +550,30 @@ footer .menu li a:hover {
   border-radius: 5px;
 }
 
+#index #lista-cartao .cartao {
+  text-decoration: none;
+}
+
+#index #lista-cartao .cartao h1 {
+  font-size: 18px;
+  color: #4b4b4b;
+}
+
+#index #lista-cartao .ver-lista-cartao {
+  display: block;
+  margin: 25px auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background: #022e69;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 .page-empresa .secao-titulo {
   margin: 50px 0;
 }

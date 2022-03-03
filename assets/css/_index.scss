@@ -144,4 +144,26 @@
 			border-radius: 5px;
 		}
 	}
+	#lista-cartao{
+		.cartao{
+			text-decoration: none;
+			h1{
+				font-size: 18px;
+				color: #4b4b4b;
+
+			}
+		}
+		.ver-lista-cartao{
+			display: block;
+			margin: 25px auto;
+			width: max-content;
+			padding: 10px 15px;
+			font-weight: 600;
+			font-size: 18px;
+			color: #fff;
+			background: $cor-principal;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+	}
 }
