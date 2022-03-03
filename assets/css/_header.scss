@@ -62,22 +62,39 @@ header {
 			text-align: center;
 			align-items: center;
 			justify-content: space-between;
+			padding: 0 20px;
 			flex: 1;
 			li {
 				a {
 					color: #fff;
 					font-size: 18px;
 					text-decoration: none;
+					&:hover{
+						color: $cor-secundaria;
+					}
 				}
 			}
 		}
-		@media(max-width: 768px){
+		@media(max-width: 992px){
 			height: 25px;
+			.offcanvas-header{
+				background: $cor-principal;
+				.offcanvas-title{
+					color: #fff;
+				}
+				.btn-close{
+					background-color: $cor-secundaria;
+				}
+			}
+			.offcanvas-body{
+				background: $cor-secundaria;
+				display: flex;
+			}
 			.barra-navegacao{
 				li{
 					margin-bottom: 15px;
 					a{
-						color: $cor-principal;
+						color: #fff;
 					}
 				}
 			}

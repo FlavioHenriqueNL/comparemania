@@ -1,7 +1,8 @@
 @import "config";
 @import "header";
 @import "footer";
-@import "supercashback";
+
+@import 'index';
 
 //Páginas Internas
 @import 'page-empresa';
@@ -9,124 +10,13 @@
 @import 'page-comparador';
 @import 'page-calculadora';
 @import 'page-contato';
+@import "supercashback";
 
 
 // Componentes
+@import 'tabela-empresas'; // CSS GERAL DE TODAS AS TABELAS DO SITE
 @import 'logo';
 @import 'newsletter';
 @import 'filter';
 @import 'pagination';
 @import 'ad';
-
-.secao-tabelas {
-  padding: 50px;
-}
-
-.tabelas {
-  .titulo-tabela {
-    color: #909090;
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 700;
-  }
-  hr {
-    border: 5px solid $cor-secundaria !important;
-    width: 25%;
-    margin: 0 auto 0 0;
-    border-radius: 10px;
-    margin-bottom: 25px;
-  }
-}
-
-.blog {
-  padding: 100px 0;
-  .titulo-secao {
-    background-color: $cor-secundaria;
-    color: #fff;
-    width: fit-content;
-    padding: 5px 15px;
-    margin-bottom: 75px;
-  }
-  .blog-post {
-    margin-bottom: 25px;
-    display: block;
-    box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-
-    figure {
-      width: 100%;
-      margin-bottom: 0;
-      img {
-        width: 100%;
-      }
-    }
-    .conteudo {
-      padding: 20px;
-      h1 {
-        font-size: 32px;
-      }
-      p {
-        font-size: 14px;
-        text-align: justify;
-      }
-    }
-  }
-}
-
-.ad-sidebar {
-  background: #ccc;
-  height: 100%;
-}
-
-.tabelaVariacoes {
-  thead {
-    background: $cor-secundaria;
-    color: #fff;
-    text-align: center;
-  }
-  thead th:first-child {
-    border-radius: 7.5px 0 0 0;
-  }
-  thead th:last-child {
-    border-radius: 0 7.5px 0 0;
-  }
-  tbody {
-    border-top: none !important;
-    tr {
-      td {
-        border: none;
-        a{
-          text-decoration: none;
-          color: #000;
-          font-weight: 500;
-          &:hover{
-            color: $cor-secundaria;
-          }
-        }
-        &:not(:first-child) {
-          text-align: center;
-        }
-        &.subiu,
-        &.caiu {
-          color: #fff;
-          font-size: 18px;
-          i {
-            font-size: 24px;
-          }
-        }
-        &.subiu {
-          color: #4bb543;
-        }
-        &.caiu {
-          color: #f32013;
-        }
-      }
-    }
-    tr:last-child td:first-child {
-      border-radius: 0 0 0 10px;
-    }
-    tr:last-child td:last-child {
-      border-radius: 0 0 10px 0;
-    }
-  }
-}
