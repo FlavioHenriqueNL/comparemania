@@ -1393,6 +1393,41 @@ footer .menu li a:hover {
   border-bottom-right-radius: 15px;
 }
 
+.termos {
+  padding: 50px 25px 150px;
+}
+
+.termos .titulo {
+  padding-left: 10px;
+  border-left: 7.5px solid #022e69;
+  margin-bottom: 50px;
+  color: #022e69;
+  font-size: 48px;
+}
+
+.termos p, .termos li, .termos a {
+  text-align: justify;
+  font-size: 22px !important;
+  color: #4b4b4b;
+  font-weight: 400;
+}
+
+.termos h2 {
+  margin: 25px 0;
+}
+
+.termos ul {
+  margin: 25px 0;
+}
+
+.termos ul li {
+  font-size: 18px;
+}
+
+.termos a {
+  font-weight: 700 !important;
+}
+
 .tabela-empresas th {
   background: #496ba9 !important;
   position: -webkit-sticky;

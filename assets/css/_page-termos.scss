@@ -1,0 +1,31 @@
+.termos{
+  padding: 50px 25px 150px;
+  .titulo{
+    padding-left: 10px;
+    border-left: 7.5px solid $cor-principal;
+    margin-bottom: 50px;
+    color: $cor-principal;
+    font-size: 48px;
+  }
+
+  p, li, a{
+    text-align: justify;
+    font-size: 22px !important;
+    color: #4b4b4b;
+    font-weight: 400;
+  }
+
+  h2{
+    margin: 25px 0;
+  }
+  ul{
+    margin: 25px 0;
+    li{
+      font-size: 18px;
+    }
+  }
+
+  a{
+    font-weight: 700 !important;
+  }
+}
