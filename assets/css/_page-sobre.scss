@@ -1,0 +1,51 @@
+.page-sobre{
+  background: darken(#fff, 5%);
+  padding: 50px 0 150px;
+  .titulo-pagina{
+    margin-bottom: 50px;
+  }
+
+  article{
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding: 15px 25px;
+    .logo{
+      margin: 25px 0;
+    }
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    p{
+      font-size: 24px;
+      text-align: justify;
+      color: #4b4b4b;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    .icon{
+      font-size: 120px;
+      color: $cor-principal;
+    }
+    @media(max-width: 768px){
+      flex-direction: column;
+      gap: 25px;
+      p{
+        order: 2;
+        font-size: 18px;
+      }
+      .icon{
+        order: 1;
+        font-size: 80px;
+      }
+    }
+  }
+
+  h2{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 50px;
+    font-weight: 700;
+  }
+}
